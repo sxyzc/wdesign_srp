@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello codehub</h1>
+{% for i in L %}
+	<p>{{ i }}</p>
+	{% for j in i %}
+	<a>{{ j }}</a>
+	{%endfor%}
+{%endfor%}
+{% for level_0 in L %}
+	<p>{{ level_0.node }}</p>
+
+	{% for level_1 in level_0.son %}
+	<p>{{ level_1.node }}</p>
+
+		{% for level_2 in level_1.son %}
+		<p>{{ level_2.node }}</p>
+
+			{% for level_3 in level_2.son %}
+			<p>{{ level_3.node }}</p>
+			
+				{% for level_4 in level_3.son %}
+				<p>{{ level_4.node }}</p>
+				{%endfor%}
+			{%endfor%}
+		{%endfor%}
+	{%endfor%}
+{%endfor%}
+<p>{{ T }}</p>
+</body>
+</html>

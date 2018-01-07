@@ -1,0 +1,403 @@
+<?xml version="1.0" standalone="yes"?>
+<resources xmlns="http://tempuri.org/resources_Database.xsd">
+  <resource>
+    <ID>16</ID>
+    <type>图形图像</type>
+    <title>The-Social-Media-Report-2012</title>
+    <resPath>res/218ca1be-6542-4cb9-bde1-6893b50174b6.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>The-Social-Media-Report-2012</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>1.17MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>69</downLoadCount>
+    <browseCount>73</browseCount>
+    <recommand />
+    <createTime>2012-12-4 18:53:26</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>1225190</resSizeInt>
+  </resource>
+  <resource>
+    <ID>15</ID>
+    <type>图形图像</type>
+    <title>20120429微博运营业界相关资料——微博协会提供</title>
+    <resPath>res/d90adfcc-3a67-469e-a27f-85de336b0a90.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>20120429微博运营业界相关资料</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>437.4KB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>60</downLoadCount>
+    <browseCount>42</browseCount>
+    <recommand />
+    <createTime>2012-5-2 8:41:02</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>447894</resSizeInt>
+  </resource>
+  <resource>
+    <ID>14</ID>
+    <type>图形图像</type>
+    <title>20120423微博运营业界相关资料——微博协会提供</title>
+    <resPath>res/5f32eaa4-e394-4b08-8e49-8b19ab2d9422.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>20120423微博运营业界相关资料</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>835.87KB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>43</downLoadCount>
+    <browseCount>15</browseCount>
+    <recommand />
+    <createTime>2012-4-24 14:57:47</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>855934</resSizeInt>
+  </resource>
+  <resource>
+    <ID>13</ID>
+    <type>图形图像</type>
+    <title>20120413微博运营业界相关资料——微博协会提供</title>
+    <resPath>res/b29f9933-574f-4d31-9586-6bfead37bd0b.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>20120413微博运营业界相关资料</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>444.07KB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>40</downLoadCount>
+    <browseCount>12</browseCount>
+    <recommand />
+    <createTime>2012-4-24 14:57:32</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>454724</resSizeInt>
+  </resource>
+  <resource>
+    <ID>12</ID>
+    <type>图形图像</type>
+    <title>《如何让微博更有营养》@营养师顾中一</title>
+    <resPath>res/5c32a6fc-e4dd-439f-9f06-209bb10b66dd.pptx</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>《如何让微博更有营养》@营养师顾中一</keyWord>
+    <description />
+    <fileFormat>pptx文件</fileFormat>
+    <resSize>48.76MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>56</downLoadCount>
+    <browseCount>16</browseCount>
+    <recommand />
+    <createTime>2012-3-31 16:01:58</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>51129766</resSizeInt>
+  </resource>
+  <resource>
+    <ID>11</ID>
+    <type>图形图像</type>
+    <title>【新浪广东校园团队培训PPT】微博运营经验分享@华工微博协会</title>
+    <resPath>res/e39b30a4-aa3f-4696-b9b7-85527340db1a.ppt</resPath>
+    <resThumbnailPath>resThumbnail/thumbnail_e39b30a4-aa3f-4696-b9b7-85527340db1a.jpg</resThumbnailPath>
+    <permissionDownload>1</permissionDownload>
+    <author>华工微博协会</author>
+    <keyWord>微博运营 华工微博协会</keyWord>
+    <description>原创内容，转载请注明@华工微博协会</description>
+    <fileFormat>ppt文件</fileFormat>
+    <resSize>1.53MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>50</downLoadCount>
+    <browseCount>13</browseCount>
+    <recommand />
+    <createTime>2012-3-28 16:51:13</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>201030601490</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>阮云阳</uploadUserTrueName>
+    <uploadUserGroupID>200</uploadUserGroupID>
+    <resSizeInt>1600000</resSizeInt>
+  </resource>
+  <resource>
+    <ID>10</ID>
+    <type>图形图像</type>
+    <title>草根前100名</title>
+    <resPath>res/d52b30cb-6740-4ecc-b1e3-8d3aef84a2d0.xls</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>草根前100名</keyWord>
+    <description />
+    <fileFormat>xls文件</fileFormat>
+    <resSize>76.5KB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>30</downLoadCount>
+    <browseCount>13</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:09:24</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>78336</resSizeInt>
+  </resource>
+  <resource>
+    <ID>9</ID>
+    <type>图形图像</type>
+    <title>新浪微博培训材料</title>
+    <resPath>res/4dc39ac5-7e41-4252-93e0-87018fd00c3c.pptx</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>新浪微博培训材料</keyWord>
+    <description />
+    <fileFormat>pptx文件</fileFormat>
+    <resSize>10.56MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>44</downLoadCount>
+    <browseCount>11</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:09:13</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>11071869</resSizeInt>
+  </resource>
+  <resource>
+    <ID>8</ID>
+    <type>图形图像</type>
+    <title>微博营销-新浪微博手册</title>
+    <resPath>res/893a21f6-66a7-47eb-9dc0-2c77e8ff4053.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>微博营销-新浪微博手册</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>1.15MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>46</downLoadCount>
+    <browseCount>15</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:08:42</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>1205753</resSizeInt>
+  </resource>
+  <resource>
+    <ID>7</ID>
+    <type>图形图像</type>
+    <title>品牌微博运营锦囊</title>
+    <resPath>res/55b0283e-7272-49f7-958e-ebd689143081.ppt</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>品牌微博运营锦囊</keyWord>
+    <description />
+    <fileFormat>ppt文件</fileFormat>
+    <resSize>7.54MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>67</downLoadCount>
+    <browseCount>19</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:08:27</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>7903744</resSizeInt>
+  </resource>
+  <resource>
+    <ID>6</ID>
+    <type>图形图像</type>
+    <title>失恋33天微博营销案例</title>
+    <resPath>res/41bef11e-81af-4e9d-849d-786591516f5f.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>失恋33天微博营销案例</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>3.13MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>30</downLoadCount>
+    <browseCount>7</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:07:49</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>3285913</resSizeInt>
+  </resource>
+  <resource>
+    <ID>5</ID>
+    <type>图形图像</type>
+    <title>企业微博大家谈推荐案例——分解分析神州租车的整体运营策略</title>
+    <resPath>res/2d8e22ad-e4ff-4894-9d9a-67fc9fb5cfbc.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>企业微博大家谈推荐案例——分解分析神州租车的整体运营策略</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>783.51KB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>18</downLoadCount>
+    <browseCount>3</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:07:33</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>802316</resSizeInt>
+  </resource>
+  <resource>
+    <ID>4</ID>
+    <type>图形图像</type>
+    <title>SocialBeta_Weibo_运营图_范怿Ryan_v1.3</title>
+    <resPath>res/3fa49ae9-09d7-41cf-92a3-198b36f70ca3.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>SocialBeta_Weibo_运营图_范怿Ryan_v1.3</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>480.63KB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>19</downLoadCount>
+    <browseCount>6</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:07:22</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>492166</resSizeInt>
+  </resource>
+  <resource>
+    <ID>3</ID>
+    <type>图形图像</type>
+    <title>2012年1月网站微博发展报告</title>
+    <resPath>res/e280591e-42a5-4eb8-b9fb-8b42177b3da6.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>2012年1月网站微博发展报告</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>1.09MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>18</downLoadCount>
+    <browseCount>1</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:07:11</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>1144627</resSizeInt>
+  </resource>
+  <resource>
+    <ID>2</ID>
+    <type>图形图像</type>
+    <title>2011年度网站微博发展报告</title>
+    <resPath>res/c0dcc937-2ab1-4df0-97ad-b248c3b687cb.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>2011年度网站微博发展报告</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>2.33MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>16</downLoadCount>
+    <browseCount>0</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:07:00</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>2438297</resSizeInt>
+  </resource>
+  <resource>
+    <ID>1</ID>
+    <type>图形图像</type>
+    <title>化妆品百强品牌微博研究报告</title>
+    <resPath>res/5e47513b-4bda-49f4-b1dc-d1b2b387b220.pdf</resPath>
+    <resThumbnailPath />
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>化妆品百强品牌微博研究报告</keyWord>
+    <description />
+    <fileFormat>pdf文件</fileFormat>
+    <resSize>4.9MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>18</downLoadCount>
+    <browseCount>0</browseCount>
+    <recommand />
+    <createTime>2012-3-12 22:06:42</createTime>
+    <uploadMode>singleFile</uploadMode>
+    <uploadUser>fengyi</uploadUser>
+    <IsPublish>1</IsPublish>
+    <uploadUserTrueName>fengyi</uploadUserTrueName>
+    <uploadUserGroupID>54</uploadUserGroupID>
+    <resSizeInt>5139401</resSizeInt>
+  </resource>
+</resources>

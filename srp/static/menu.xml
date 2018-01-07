@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<menuNodes>
+  <menuNode displayName="首页" dirName="首页" hyperLinkFile="multiPage.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="100%" visibleForm="allPeople" exclusion="" unVisibleInfo="" />
+  <menuNode displayName="课程简介" dirName="课程简介" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+    <menuNode displayName="课程简介" dirName="课程简介" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="教学大纲" dirName="教学大纲" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="教学日历" dirName="教学日历" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="课程特色" dirName="课程特色" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="学习者分析" dirName="学习者分析" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="教材参考" dirName="教材参考" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="学术理论类" dirName="学术理论类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="案例应用类" dirName="案例应用类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="课程学习16级" dirName="课程学习16级" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/16网新" unVisibleInfo="" share="0">
+    <menuNode displayName="参考书目" dirName="参考书目" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="学术理论类" dirName="学术理论类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="案例应用类" dirName="案例应用类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第一章：概论" dirName="第一章：概论" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="章节相关资料" dirName="章节相关资料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="本栏目仅对本班学生可见" share="0" />
+    </menuNode>
+    <menuNode displayName="第二章：网络媒体与传播理论分析" dirName="第二章：网络媒体与传播理论分析" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第三章：网络媒体形态与规范" dirName="第三章：网络媒体形态与规范" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="研究学习" dirName="研究学习" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="内容" dirName="内容" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="华工官微" dirName="华工官微" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="共享材料" dirName="共享材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="广东学联" dirName="广东学联" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="共享材料" dirName="共享材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="广州地铁" dirName="广州地铁" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="共享材料" dirName="共享材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="漫友文化" dirName="漫友文化" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="共享材料" dirName="共享材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="研究分享组" dirName="研究分享组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="共享材料" dirName="共享材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="课程资源" dirName="课程资源" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="201030601490" adminDirRight="edit;uploadFile;downloadFile">
+    <menuNode displayName="微博案例与材料" dirName="微博案例与材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="营销案例" dirName="营销案例" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="视频库" dirName="视频库" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="讲座录像" dirName="讲座录像" hyperLinkFile="video_resources.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="媒体素材" dirName="媒体素材" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="广告视频" dirName="广告视频" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="痛点" dirName="痛点" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="网站使用教程" dirName="网站使用教程" hyperLinkFile="video_resources.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="电子书" dirName="电子书" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="软件" dirName="软件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="视觉传达设计案例" dirName="视觉传达设计案例" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="视频类" dirName="视频类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="平面类" dirName="平面类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="学生作业" dirName="学生作业" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="201230850315" adminDirRight="edit;uploadFile;downloadFile">
+    <menuNode displayName="公共作业" dirName="公共作业" hyperLinkFile="exercise.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="201530612200;201630666332" adminDirRight="edit" />
+    <menuNode displayName="10编辑班作业" dirName="10编辑班作业" hyperLinkFile="exercise.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="10广告学作业" dirName="10广告学作业" hyperLinkFile="exercise.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="11编辑出版" dirName="11编辑出版" hyperLinkFile="exercise.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/11编辑出版" unVisibleInfo="" share="0" />
+    <menuNode displayName="稿件汇总" dirName="稿件汇总" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="201030800350;201030800039;201030800312;201030800121" adminDirRight="edit;uploadFile;downloadFile" />
+    <menuNode displayName="学生作品" dirName="学生作品" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="设计作品" dirName="设计作品" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="主题汇报" dirName="主题汇报" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="论坛" dirName="论坛" hyperLinkFile="myForum.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="100%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+  </menuNode>
+  <menuNode displayName="课程学习15级" dirName="课程学习15级" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/16传播辅修" unVisibleInfo="" share="0">
+    <menuNode displayName="参考书目" dirName="参考书目" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="学术理论类" dirName="学术理论类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="案例应用类" dirName="案例应用类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第一章：概论" dirName="第一章：概论" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="章节相关资料" dirName="章节相关资料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="本栏目仅对本班学生可见" share="0" />
+    </menuNode>
+    <menuNode displayName="第二章：网络媒体与传播理论分析" dirName="第二章：网络媒体与传播理论分析" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第三章：网络媒体形态与规范" dirName="第三章：网络媒体形态与规范" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="研究学习" dirName="研究学习" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="研究学习" dirName="研究学习" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/15传播1班" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="201530612200" adminDirRight="edit;uploadFile;downloadFile;changeTemplet;rightMenu">
+        <menuNode displayName="研究材料" dirName="研究材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="第一组-厦门检察" dirName="第一组-厦门检察" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第一组-厦门检察/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第一组-厦门检察/组员" adminDirRight="edit" />
+        </menuNode>
+        <menuNode displayName="第二组-华工官微" dirName="第二组-华工官微" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第二组-华工官微/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第二组-华工官微/组员" adminDirRight="edit" />
+        </menuNode>
+        <menuNode displayName="第三组-广州地铁荟" dirName="第三组-广州地铁荟" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第三组-漫友文化/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第三组-广州地铁荟/组员" adminDirRight="edit" />
+        </menuNode>
+        <menuNode displayName="第四组-老鸟叹广州" dirName="第四组-老鸟叹广州" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第四组-电信校园/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第四组-老鸟叹广州/组员" adminDirRight="edit" />
+        </menuNode>
+        <menuNode displayName="第五组-课程号" dirName="第五组-课程号" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第四组-电信校园/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第五组-课程号/组员" adminDirRight="edit" />
+        </menuNode>
+        <menuNode displayName="第六组-性情君" dirName="第六组-性情君" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第四组-电信校园/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第六组-性情君/组员" adminDirRight="edit" />
+        </menuNode>
+      </menuNode>
+      <menuNode displayName="专题学习" dirName="专题学习" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/16传播辅修" unVisibleInfo="" share="0">
+        <menuNode displayName="专题学习" dirName="专题学习" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="1组标题党现象" dirName="1组标题党现象" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="共享区" dirName="共享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="专题学习/1组标题党现象/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="专题学习/1组标题党现象/组员" adminDirRight="" />
+        </menuNode>
+        <menuNode displayName="2组标题党编写" dirName="2组标题党编写" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="共享区" dirName="共享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="专题学习/2组标题党编写/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="专题学习/2组标题党编写/组员" adminDirRight="" />
+        </menuNode>
+        <menuNode displayName="3组数据可视化" dirName="3组数据可视化" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="共享区" dirName="共享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="专题学习/3组数据可视化/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="专题学习/3组数据可视化/组员" adminDirRight="" />
+        </menuNode>
+        <menuNode displayName="4组标题党现象" dirName="4组标题党现象" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="共享区" dirName="共享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="专题学习/4组标题党现象/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="专题学习/4组标题党现象/组员" adminDirRight="" />
+        </menuNode>
+        <menuNode displayName="5组标题党思考" dirName="5组标题党思考" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="共享区" dirName="共享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="专题学习/5组标题党思考/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="专题学习/2组标题党编写/组员" adminDirRight="" />
+        </menuNode>
+        <menuNode displayName="6组标题党思考" dirName="6组标题党思考" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+          <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+          <menuNode displayName="共享区" dirName="共享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="专题学习/6组标题党思考/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="专题学习/2组标题党编写/组员" adminDirRight="" />
+        </menuNode>
+      </menuNode>
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="课程学习14级" dirName="课程学习14级" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/14传播2班" unVisibleInfo="" share="0">
+    <menuNode displayName="参考书目" dirName="参考书目" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="学术理论类" dirName="学术理论类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="案例应用类" dirName="案例应用类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第一章：概论" dirName="第一章：概论" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="章节相关资料" dirName="章节相关资料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="本栏目仅对本班学生可见" share="0" />
+    </menuNode>
+    <menuNode displayName="第二章：网络媒体与传播理论分析" dirName="第二章：网络媒体与传播理论分析" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第三章：网络媒体形态与规范" dirName="第三章：网络媒体形态与规范" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="社会网络分析" dirName="社会网络分析" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="研究学习" dirName="研究学习" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/14传播2班" unVisibleInfo="" share="0">
+      <menuNode displayName="研究材料" dirName="研究材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="第一组-厦门检察" dirName="第一组-厦门检察" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第一组-厦门检察/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第一组-厦门检察/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第二组-华工官微" dirName="第二组-华工官微" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第二组-华工官微/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第二组-华工官微/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第三组-漫友文化" dirName="第三组-漫友文化" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第三组-漫友文化/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第三组-漫友文化/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第四组-电信校园" dirName="第四组-电信校园" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第四组-电信校园/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第四组-电信校园/组员" adminDirRight="edit" />
+      </menuNode>
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="课程学习13级" dirName="课程学习13级" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0">
+    <menuNode displayName="参考书目" dirName="参考书目" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="学术理论类" dirName="学术理论类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="案例应用类" dirName="案例应用类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第一章：概论" dirName="第一章：概论" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="章节相关资料" dirName="章节相关资料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="本栏目仅对本班学生可见" share="0" />
+    </menuNode>
+    <menuNode displayName="第二章：网络媒体与传播理论分析" dirName="第二章：网络媒体与传播理论分析" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第三章：网络媒体形态与规范" dirName="第三章：网络媒体形态与规范" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="研究学习" dirName="研究学习" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="" share="0">
+      <menuNode displayName="研究材料" dirName="研究材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="第一组-厦门检察" dirName="第一组-厦门检察" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第一组-厦门检察/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第一组-厦门检察/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第二组-漫友文化I" dirName="第二组-漫友文化I" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第二组-漫友文化I/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第二组-漫友文化I/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第三组-漫友文化II" dirName="第三组-漫友文化II" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第三组-漫友文化II/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第三组-漫友文化II/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第四组-华工官微" dirName="第四组-华工官微" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第四组-华工官微/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第四组-华工官微/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第五组-比格餐吧" dirName="第五组-比格餐吧" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第五组-比格餐吧/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第五组-比格餐吧/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第六组-比格餐吧II" dirName="第六组-比格餐吧II" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第六组-比格餐吧II/组员" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第六组-比格餐吧II/组员" adminDirRight="edit" />
+      </menuNode>
+      <menuNode displayName="第七组-SEO" dirName="第七组-SEO" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="" share="0" adminDirForm="class" adminDirExclusion="研究学习/第七组-SEO/组员" adminDirRight="edit" />
+      </menuNode>
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="课程学习12级" dirName="课程学习12级" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/12编辑" unVisibleInfo="" share="0">
+    <menuNode displayName="参考书目" dirName="参考书目" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="学术理论类" dirName="学术理论类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="案例应用类" dirName="案例应用类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第一章：概论" dirName="第一章：概论" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="章节相关资料" dirName="章节相关资料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="本栏目仅对本班学生可见" share="0" />
+    </menuNode>
+    <menuNode displayName="第二章：网络媒体与传播理论分析" dirName="第二章：网络媒体与传播理论分析" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第三章：网络媒体形态与规范" dirName="第三章：网络媒体形态与规范" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="研究学习" dirName="研究学习" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="ppt" dirName="ppt" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第四章：网络媒体艺术与文化" dirName="第四章：网络媒体艺术与文化" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第五章：网络媒体商业与运营" dirName="第五章：网络媒体商业与运营" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="研究学习iwode" dirName="研究学习iwode" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="" share="0">
+      <menuNode displayName="研究材料" dirName="研究材料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="第一组" dirName="第一组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第一组/组员" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="第二组" dirName="第二组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第二组/组员" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="第三组" dirName="第三组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource_new.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第三组/组员" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="第四组" dirName="第四组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第四组/组员" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="第五组" dirName="第五组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第五组/组员" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="第六组" dirName="第六组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第六组/组员" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="第七组" dirName="第七组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第七组/组员" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="第八组" dirName="第八组" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="组员" dirName="组员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="分享区" dirName="分享区" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="研究学习/第八组/组员" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="课程学习11级" dirName="课程学习11级" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/11编辑出版" unVisibleInfo="" share="0">
+    <menuNode displayName="参考书目" dirName="参考书目" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="学术理论类" dirName="学术理论类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="案例应用类" dirName="案例应用类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第一章：概论" dirName="第一章：概论" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="" share="0" />
+      <menuNode displayName="章节相关资料" dirName="章节相关资料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="本栏目仅对本班学生可见" share="0" />
+    </menuNode>
+    <menuNode displayName="第二章：网络媒体与传播理论分析" dirName="第二章：网络媒体与传播理论分析" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第三章：网络媒体形态与规范" dirName="第三章：网络媒体形态与规范" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="研究学习ppt" dirName="研究学习ppt" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="研究学习" dirName="研究学习" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile;changeTemplet;rightMenu">
+      <menuNode displayName="研究学习" dirName="研究学习" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="生活类阅读" dirName="生活类阅读" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="小组成员" dirName="小组成员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="文档共享" dirName="文档共享" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit" />
+        <menuNode displayName="讨论区" dirName="讨论区" hyperLinkFile="myForum.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="小组网站" dirName="小组网站" hyperLinkFile="multiPage.aspx" target="_blank" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile;changeTemplet;rightMenu" />
+      </menuNode>
+      <menuNode displayName="娱乐类阅读" dirName="娱乐类阅读" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="小组成员" dirName="小组成员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="文档共享" dirName="文档共享" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit" />
+        <menuNode displayName="讨论区" dirName="讨论区" hyperLinkFile="myForum.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="小组网站" dirName="小组网站" hyperLinkFile="multiPage.aspx" target="_blank" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="新闻类阅读" dirName="新闻类阅读" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="小组成员" dirName="小组成员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        </menuNode>
+        <menuNode displayName="文档共享" dirName="文档共享" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit" />
+        <menuNode displayName="讨论区" dirName="讨论区" hyperLinkFile="myForum.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="小组网站" dirName="小组网站" hyperLinkFile="multiPage.aspx" target="_blank" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile;changeTemplet;rightMenu" />
+      </menuNode>
+      <menuNode displayName="社交类阅读" dirName="社交类阅读" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="小组成员" dirName="小组成员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="文档共享" dirName="文档共享" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit" />
+        <menuNode displayName="讨论区" dirName="讨论区" hyperLinkFile="myForum.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="小组网站" dirName="小组网站" hyperLinkFile="multiPage.aspx" target="_blank" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile;changeTemplet;rightMenu" />
+      </menuNode>
+      <menuNode displayName="科技类阅读" dirName="科技类阅读" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="小组成员" dirName="小组成员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="文档共享" dirName="文档共享" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit" />
+        <menuNode displayName="讨论区" dirName="讨论区" hyperLinkFile="myForum.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="小组网站" dirName="小组网站" hyperLinkFile="multiPage.aspx" target="_blank" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile" />
+      </menuNode>
+      <menuNode displayName="校园类阅读" dirName="校园类阅读" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+        <menuNode displayName="小组成员" dirName="小组成员" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="文档共享" dirName="文档共享" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit" />
+        <menuNode displayName="讨论区" dirName="讨论区" hyperLinkFile="myForum.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+        <menuNode displayName="小组网站" dirName="小组网站" hyperLinkFile="multiPage.aspx" target="_blank" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="" adminDirRight="edit;uploadFile;downloadFile;changeTemplet;rightMenu" />
+      </menuNode>
+    </menuNode>
+    <menuNode displayName="第四章：网络媒体艺术与文化" dirName="第四章：网络媒体艺术与文化" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第五章：网络媒体商业与运营" dirName="第五章：网络媒体商业与运营" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第六章：媒体政策、法律与伦理" dirName="第六章：媒体政策、法律与伦理" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+  </menuNode>
+  <menuNode displayName="课程学习10级" dirName="课程学习10级" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/10编辑出版" unVisibleInfo="" share="0">
+    <menuNode displayName="参考书目" dirName="参考书目" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="学术理论类" dirName="学术理论类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="案例应用类" dirName="案例应用类" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第一章：概论" dirName="第一章：概论" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="章节相关资料" dirName="章节相关资料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/10编辑出版" unVisibleInfo="本栏目仅对本班学生可见" share="0" />
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理/10编辑出版" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第二章：网络媒体与传播理论分析" dirName="第二章：网络媒体与传播理论分析" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第三章：网络媒体形态与规范" dirName="第三章：网络媒体形态与规范" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="第四章：网络媒体艺术与文化" dirName="第四章：网络媒体艺术与文化" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第五章：网络媒体商业与运营" dirName="第五章：网络媒体商业与运营" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="第六章：媒体政策、法律与伦理" dirName="第六章：媒体政策、法律与伦理" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="课件" dirName="课件" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="微博创意团队" dirName="微博创意团队" hyperLinkFile="multiPage.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="100%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0" />
+  </menuNode>
+  <menuNode displayName="社团协会" dirName="社团协会" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0" adminDirForm="nonAllUser" adminDirExclusion="201030601490" adminDirRight="edit;uploadFile;downloadFile;changeTemplet;rightMenu">
+    <menuNode displayName="华工微博协会" dirName="华工微博协会" hyperLinkFile="multiPage.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="协会会员名单" dirName="协会会员名单" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="社团活动" dirName="社团活动" hyperLinkFile="index.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0">
+      <menuNode displayName="微博运营讲座" dirName="微博运营讲座" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+      <menuNode displayName="校园微博运营讲座资料" dirName="校园微博运营讲座资料" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    </menuNode>
+    <menuNode displayName="协会资料" dirName="协会资料" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="进击的老人" dirName="进击的老人" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="亲姐传媒" dirName="亲姐传媒" hyperLinkFile="view_resource.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+  </menuNode>
+  <menuNode displayName="学生管理" dirName="学生管理" hyperLinkFile="default.htm" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="nonAllUser" exclusion="" unVisibleInfo="" share="0">
+    <menuNode displayName="16网新" dirName="16网新" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="16传播辅修" dirName="16传播辅修" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="15传播1班" dirName="15传播1班" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="15传播辅修" dirName="15传播辅修" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="14传播2班" dirName="14传播2班" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="13编辑" dirName="13编辑" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="13传播广告" dirName="13传播广告" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="12编辑" dirName="12编辑" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="12传播广告" dirName="12传播广告" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="10编辑出版" dirName="10编辑出版" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="class" exclusion="学生管理" unVisibleInfo="对不起！非注册学员不可查看本站同学信息。" share="0" />
+    <menuNode displayName="11编辑出版" dirName="11编辑出版" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="广告辅修班" dirName="广告辅修班" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+    <menuNode displayName="11传播广告" dirName="11传播广告" hyperLinkFile="student_List.aspx" target="contentFrame" contentFrameHeight="0" contentFrameWidth="80%" visibleForm="allPeople" exclusion="" unVisibleInfo="" share="0" />
+  </menuNode>
+</menuNodes>

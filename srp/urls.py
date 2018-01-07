@@ -1,0 +1,15 @@
+from django.conf.urls import url
+
+from . import views
+
+app_name = 'srp'
+urlpatterns = [
+    #url(r'^test', views.test, name='test'),
+    url(r'^index', views.index, name='index'),
+    url(r'^detail', views.detail, name='detail'),
+    url(r'^process_get', views.process_get, name='process'),
+    # url(r'^mainPage', views.mainPage),
+    # url(r'^login', views.login, name='login'),
+    # url(r'^register', views.register, name='register'),
+
+]

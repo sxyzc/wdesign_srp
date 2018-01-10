@@ -1,0 +1,168 @@
+<?xml version="1.0" standalone="yes"?>
+<resources xmlns="http://tempuri.org/videos_Database.xsd">
+  <resource>
+    <ID>19</ID>
+    <title>我是如何做到40%以上的转化率</title>
+    <teacher>华农红满堂姐姐</teacher>
+    <resPath>res/20150427scauwechat.wmv</resPath>
+    <resThumbnailPath>resThumbnail/thumbnail_b749f2f8-852c-4340-817f-3ef8ddb25574.jpg</resThumbnailPath>
+    <teachingFilePath>res/teachingFile_b749f2f8-852c-4340-817f-3ef8ddb25574.pptx</teachingFilePath>
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord>华农红满堂</keyWord>
+    <require />
+    <mainContent />
+    <videoFormat>wmv文件</videoFormat>
+    <resSize>713MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>2</downLoadCount>
+    <browseCount>25</browseCount>
+    <recommandCount>0</recommandCount>
+    <recommand xml:space="preserve"> </recommand>
+    <teachingFileType>pptx</teachingFileType>
+    <createTime>2015/5/5 16:10:27</createTime>
+    <uploadMode>singleFile(wmv)</uploadMode>
+    <autoPlay>1</autoPlay>
+    <playerHeight>640</playerHeight>
+    <uploadUser>fengyi</uploadUser>
+    <showMarkerDiv>true</showMarkerDiv>
+  </resource>
+  <resource>
+    <ID>14</ID>
+    <title>iwode埃沃定制</title>
+    <teacher>潘柏泉</teacher>
+    <resPath>res/02a5f327-86ea-4922-af94-c64ad8dd3e3a.wmv</resPath>
+    <resThumbnailPath>resThumbnail/thumbnail_02a5f327-86ea-4922-af94-c64ad8dd3e3a.jpg</resThumbnailPath>
+    <teachingFilePath>res/teachingFile_02a5f327-86ea-4922-af94-c64ad8dd3e3a.ppt</teachingFilePath>
+    <permissionDownload>1</permissionDownload>
+    <author>潘柏泉</author>
+    <keyWord>iwode埃沃定制</keyWord>
+    <require />
+    <mainContent />
+    <videoFormat>wmv文件</videoFormat>
+    <resSize>675.22MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>15</downLoadCount>
+    <browseCount>36</browseCount>
+    <recommandCount>0</recommandCount>
+    <recommand xml:space="preserve"> </recommand>
+    <teachingFileType>ppt</teachingFileType>
+    <createTime>2014/5/12 9:06:56</createTime>
+    <uploadMode>singleFile(wmv)</uploadMode>
+    <autoPlay>1</autoPlay>
+    <playerHeight>300</playerHeight>
+    <uploadUser>fengyi</uploadUser>
+    <showMarkerDiv>true</showMarkerDiv>
+  </resource>
+  <resource>
+    <ID>5</ID>
+    <title>做正确的事OR正确地做事？--原创漫画的数字化生存</title>
+    <teacher>赖春晖</teacher>
+    <resPath>res/b432f4ac-7623-48b2-a719-25c0787b7085.mp4</resPath>
+    <resThumbnailPath>resThumbnail/thumbnail_b432f4ac-7623-48b2-a719-25c0787b7085.jpg</resThumbnailPath>
+    <teachingFilePath>res/teachingFile_b432f4ac-7623-48b2-a719-25c0787b7085.pptx</teachingFilePath>
+    <permissionDownload>1</permissionDownload>
+    <author />
+    <keyWord />
+    <require />
+    <mainContent />
+    <videoFormat>mp4文件</videoFormat>
+    <resSize>218.11MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>2</downLoadCount>
+    <browseCount>22</browseCount>
+    <recommandCount>0</recommandCount>
+    <recommand />
+    <teachingFileType>pptx</teachingFileType>
+    <createTime>2013-6-19 8:51:53</createTime>
+    <uploadMode>singleFile(wmv)</uploadMode>
+    <autoPlay>1</autoPlay>
+    <playerHeight>640</playerHeight>
+    <uploadUser>fengyi</uploadUser>
+    <showMarkerDiv>true</showMarkerDiv>
+  </resource>
+  <resource>
+    <ID>4</ID>
+    <title>Social Communication&#xB;&amp; SMAS</title>
+    <teacher>钟天炜</teacher>
+    <resPath>res/517bbff7-8ca7-4f8c-8b1e-0d8037a9d022.wmv</resPath>
+    <resThumbnailPath>resThumbnail/thumbnail_517bbff7-8ca7-4f8c-8b1e-0d8037a9d022.jpg</resThumbnailPath>
+    <teachingFilePath>res/teachingFile_517bbff7-8ca7-4f8c-8b1e-0d8037a9d022.pdf</teachingFilePath>
+    <permissionDownload>1</permissionDownload>
+    <author>钟天炜</author>
+    <keyWord>2012.5.21</keyWord>
+    <require />
+    <mainContent />
+    <videoFormat>wmv文件</videoFormat>
+    <resSize>202.42MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>40</downLoadCount>
+    <browseCount>49</browseCount>
+    <recommandCount>0</recommandCount>
+    <recommand />
+    <teachingFileType>pdf</teachingFileType>
+    <createTime>2012-05-23 15:21:43</createTime>
+    <uploadMode>singleFile(wmv)</uploadMode>
+    <autoPlay>1</autoPlay>
+    <playerHeight>480</playerHeight>
+    <uploadUser>fengyi</uploadUser>
+  </resource>
+  <resource>
+    <ID>3</ID>
+    <title>校园微博管理认知</title>
+    <teacher>冯毅</teacher>
+    <resPath>res/bec21c24-b7f3-48a3-b62c-2931278f0e59.WMV</resPath>
+    <resThumbnailPath>resThumbnail/thumbnail_bec21c24-b7f3-48a3-b62c-2931278f0e59.jpg</resThumbnailPath>
+    <teachingFilePath>res/teachingFile_bec21c24-b7f3-48a3-b62c-2931278f0e59.ppt</teachingFilePath>
+    <permissionDownload>0</permissionDownload>
+    <author>冯毅</author>
+    <keyWord>冯毅</keyWord>
+    <require />
+    <mainContent />
+    <videoFormat>wmv文件</videoFormat>
+    <resSize>332.95MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>22</downLoadCount>
+    <browseCount>104</browseCount>
+    <recommandCount>0</recommandCount>
+    <recommand />
+    <teachingFileType>ppt</teachingFileType>
+    <createTime>2012-05-18 0:26:00</createTime>
+    <uploadMode>singleFile(wmv)</uploadMode>
+    <autoPlay>1</autoPlay>
+    <playerHeight>480</playerHeight>
+    <uploadUser>fengyi</uploadUser>
+  </resource>
+  <resource>
+    <ID>2</ID>
+    <title>微博运营讲座</title>
+    <teacher>微博协会阮云阳</teacher>
+    <resPath>res/73f220f5-0f27-449e-bcfb-99ce62292e6c.WMV</resPath>
+    <resThumbnailPath />
+    <teachingFilePath>res/teachingFile_73f220f5-0f27-449e-bcfb-99ce62292e6c.swf</teachingFilePath>
+    <permissionDownload>1</permissionDownload>
+    <author>微博协会阮云阳</author>
+    <keyWord>微博运营讲座</keyWord>
+    <require />
+    <mainContent />
+    <videoFormat>wmv文件</videoFormat>
+    <resSize>261.56MB</resSize>
+    <timeSpan />
+    <orientStudent>本科</orientStudent>
+    <downLoadCount>65</downLoadCount>
+    <browseCount>123</browseCount>
+    <recommandCount>0</recommandCount>
+    <recommand />
+    <teachingFileType>swf</teachingFileType>
+    <createTime>2012-05-17 0:06:46</createTime>
+    <uploadMode>singleFile(wmv)</uploadMode>
+    <autoPlay>1</autoPlay>
+    <playerHeight>480</playerHeight>
+    <uploadUser>fengyi</uploadUser>
+  </resource>
+</resources>

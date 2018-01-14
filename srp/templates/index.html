@@ -32,50 +32,73 @@ function loadXMLDoc(dname)
 mm = 1
 function dfs(root_node,argStr)
 {
-	//mm +=1
-	//if(mm>20)return
-	console.log(root_node.nodeName)
-	var x=root_node.childNodes;
-    document.write('<li is_clicked="off">')
-    <!--document.write('<a href="test.html">')-->
-	document.write('<a href="{% url 'srp:process' %}?argStr=')
-	document.write(argStr)
-	document.write('">')
-    document.write(root_node.getAttribute("displayName"))
-    document.write(argStr)
-    document.write('</a>')
-    
+    //mm +=1
+    //if(mm>20)return
+    console.log(root_node.nodeName)
+    var x=root_node.childNodes;
+ //    document.write('<li is_clicked="off">')
+ //    <!--document.write('<a href="test.html">')-->
+    // document.write('<a href="{% url 'srp:process' %}?argStr=')
+    // document.write(argStr)
+    // document.write('">')
+ //    document.write(root_node.getAttribute("displayName"))
+ //    document.write(argStr)
+ //    document.write('</a>')
+
+    var is_leaf=1
+    for (var i=0;i<x.length;i++)
+    { 
+      if (x[i].nodeType==1)
+      {
+        is_leaf = 0;break;
+      } 
+    }
+    if(!is_leaf){
+        document.write('<li><a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>')
+        document.write(root_node.getAttribute("displayName"))
+        document.write(argStr)
+        document.write('</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>')
+        document.write('<div id="subPages" class="collapse "><ul class="nav">')
+    }else{
+        document.write('<li><a href="{% url 'srp:process' %}?argStr=')
+        document.write(argStr)
+        document.write('">')
+        document.write(root_node.getAttribute("displayName"))
+        document.write(argStr)
+        document.write('</a></li>')
+    }
     //document.write('<ul>')
 console.log("+++++++    "+x.length)
-	//console.log("+++++++")
-	var cnt = 0
-	//cnt+=1
+console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
+
+    //console.log("+++++++")
+
     var cnt=0
-	for (var i=0;i<x.length;i++)
-	{ 
-	  if (x[i].nodeType==1)
-	  {//Process only element nodes (type 1) 
-	  	//console.log(x[i].nodeName)
-        if(cnt==0){
-            document.write('<ul class="nav">')
-        }
-	  	cnt=cnt+1
-	  	console.log("$$$$$$$$$$$$")
-	  	dfs(x[i],argStr+"|"+(cnt-1))
-	  // document.write(x[i].nodeName);
-	  // document.write("<br />");
-	  } 
-	}
-    if(cnt>0)document.write('</ul>')
-        document.write('</li>')
+    for (var i=0;i<x.length;i++)
+    { 
+      if (x[i].nodeType==1)
+      {//Process only element nodes (type 1) 
+        //console.log(x[i].nodeName)
+        
+        //if(cnt==0){
+        //    document.write('<ul class="nav">')
+        //}
+        cnt=cnt+1
+        console.log("$$$$$$$$$$$$")
+        dfs(x[i],argStr+"|"+(cnt-1))
+      // document.write(x[i].nodeName);
+      // document.write("<br />");
+      } 
+    }
+    if(cnt>0)document.write('</ul></div></li>')
     
-	console.log("--------      "+cnt)
+    console.log("--------      "+cnt)
 }
 
 
 </script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     $(document).ready(function(){
 
 		   $ ('#menu li').click (function ()
@@ -96,7 +119,7 @@ console.log("+++++++    "+x.length)
 		   });
 		
     });
-</script>
+</script> -->
 
 </head>
 <body>
@@ -162,5 +185,10 @@ console.log("+++++++    "+x.length)
 </div>
 <script src="../static/scripts/jquery.min.js"></script>
 <script src="../static/scripts/klorofil-common.js"></script>
+
+    <script src="/static/scripts/bootstrap.min.js"></script>
+    <script src="/static/scripts/jquery.slimscroll.min.js"></script>
+    <script src="/static/scripts/jquery.easypiechart.min.js"></script>
+    <script src="/static/scripts/chartist.min.js"></script>
 </body>
 </html>

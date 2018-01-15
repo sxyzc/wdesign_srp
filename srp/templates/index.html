@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>网络媒体设计</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/linearicons/style.css">
     <link rel="stylesheet" href="../static/css/main.css">
+    <!--<link rel="stylesheet" href="../static/css/mystyle.css">-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
 function loadXMLDoc(dname)
@@ -54,15 +55,19 @@ function dfs(root_node,argStr)
       } 
     }
     if(!is_leaf){
-        document.write('<li><a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>')
+        document.write('<li><a href="#')
+        document.write(root_node.getAttribute("displayName"))
+        document.write('" data-toggle="collapse" class="collapsed"><i class="lnr lnr-menu"></i><span>')
         document.write(root_node.getAttribute("displayName"))
         document.write(argStr)
         document.write('</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>')
-        document.write('<div id="subPages" class="collapse "><ul class="nav">')
+        document.write('<div id="')
+        document.write(root_node.getAttribute("displayName"))
+        document.write('" class="collapse "><ul class="nav" style="padding-left: 15px;">')
     }else{
         document.write('<li><a href="{% url 'srp:process' %}?argStr=')
         document.write(argStr)
-        document.write('">')
+        document.write('"><i class="lnr lnr-tag" style="font-size: 15px;"></i>')
         document.write(root_node.getAttribute("displayName"))
         document.write(argStr)
         document.write('</a></li>')
@@ -126,18 +131,22 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
 <div id="wrapper">
 <!--NAVBAR-->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="brand" style="display: block">
-            <a href="index.html">网络媒体设计</a>
+        <div class="brand" style="display: block;font-size: 25px">
+            <a href="index.html"><i class="fa fa-home"></i>网络媒体设计</a>
         </div>
         <div class="container-fluid">
         <div class="navbar-btn">
+            <!--<input type="checkbox" id="toggle-checkbox">-->
             <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
         </div>
+            <div class="navbar-btn" style="float: right">
+                <a href="login.html"  class="">登录</a>
+            </div>
         </div>
     </nav>
     <!--LEFT SIDEBAR-->
     <div id="sidebar-nav" class="sidebar">
-        <div class="">
+        <div class="sidebar-scroll">
             <nav>
                 <ul  class="nav" id="menu">
                     <script>
@@ -160,7 +169,7 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
 
                     </script>
                     <li>
-                        <a href="a.html">asdfs</a>
+                        <a href="#">asdfs</a>
                     </li>
                 </ul>
             </nav>
@@ -182,13 +191,17 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
             </div>
         </div>
     </div>
+
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">华南理工大学 教育技术中心 版权所有</p>
+        </div>
+    </footer>
 </div>
 <script src="../static/scripts/jquery.min.js"></script>
+<script src="../static/scripts/bootstrap.min.js"></script>
+<script src="../static/scripts/jquery.slimscroll.min.js"></script>
 <script src="../static/scripts/klorofil-common.js"></script>
-
-    <script src="/static/scripts/bootstrap.min.js"></script>
-    <script src="/static/scripts/jquery.slimscroll.min.js"></script>
-    <script src="/static/scripts/jquery.easypiechart.min.js"></script>
-    <script src="/static/scripts/chartist.min.js"></script>
 </body>
 </html>

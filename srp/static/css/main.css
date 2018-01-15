@@ -72,12 +72,18 @@ footer {
 
 #wrapper #sidebar-nav,
 #wrapper .main {
-  padding-top: 80px; }
+  padding-top: 80px;
+}
 
 @media screen and (max-width: 767px) {
-  #wrapper #sidebar-nav,
   #wrapper .main {
-    padding-top: 130px; } }
+    padding-top: 80px;
+  } }
+
+@media screen and (max-width: 767px) {
+  #wrapper #sidebar-nav{
+    padding-top: 80px;
+  } }
 
 .layout-fullwidth #wrapper .sidebar {
   left: -260px; }
@@ -166,11 +172,12 @@ html.fullscreen-bg #wrapper {
     background-color: #f8f8f8; }
   .navbar-default .brand {
     float: left;
-    padding: 30px 39px;
+    padding-top: 20px;
+    padding-left: 20px;
     background-color: #fff; }
   @media screen and (max-width: 1024px) {
     .navbar-default .brand {
-      padding-left: 30px;
+      padding-left: 20px;
       padding-right: 15px; } }
   @media screen and (max-width: 992px) {
     .navbar-default .brand {
@@ -353,7 +360,7 @@ ul.notifications > li {
 .sidebar {
   z-index: 9; }
   .sidebar .nav > li > a {
-    padding: 18px 30px;
+    padding: 18px 20px;
     color: #AEB7C2;
     border-left: 5px solid transparent; }
     .sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus, .sidebar .nav > li > a.active {
@@ -379,7 +386,7 @@ ul.notifications > li {
       position: relative;
       top: 5px;
       font-size: 12px;
-      line-height: 1.1;
+      line-height: 1.0;
       -moz-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
       -webkit-transform: rotate(-90deg);
@@ -408,7 +415,7 @@ ul.notifications > li {
     .sidebar .nav .nav {
       background-color: #252c35; }
       .sidebar .nav .nav > li > a {
-        padding-left: 60px;
+        padding-left: 15px;
         padding-top: 10px;
         padding-bottom: 10px; }
         .sidebar .nav .nav > li > a:focus, .sidebar .nav .nav > li > a.active {

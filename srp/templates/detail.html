@@ -151,9 +151,6 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                 <!--<input type="checkbox" id="toggle-checkbox">-->
                 <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
             </div>
-            <div class="navbar-btn" style="float: right">
-                <a href="login.html"  class="">登录</a>
-            </div>
         </div>
     </nav>
     <!--LEFT SIDEBAR-->
@@ -191,38 +188,73 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
     <div class="main">
         <div class="main-content">
             <div class="container-fluid">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>序号</th>
-                        <th style="text-align:right">标题</th>
-                        <th>格式</th>
-                        <th>下载地址</th>
-                    </tr>
-                    </thead>
-                    {% for res in L %}
-                    <tr>
-                        <td>{{res.0}}</td>
-                        <td style="text-align:right">{{res.1}}</td>
-                        <td >{{res.2}}</td>
-                        <td ><a href='{{res.3}}'>下载</a></td>
-                    </tr>
-                    {% endfor %}
-                </table>
-                <div class="pagination">
-                                <span class="step-links">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <!------------------ 希望可以在这里加入所在目录的名称 --------------->
+                        <h3 class="panel-title">目录的名称</h3>
+                    </div>
+                    <div class="panel-body table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th style="text-align:right">标题</th>
+                                <th>格式</th>
+                                <th>下载地址</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for res in L %}
+                            <tr>
+                                <td>{{res.0}}</td>
+                                <td style="text-align:right">{{res.1}}</td>
+                                <td >{{res.2}}</td>
+                                <td ><a href='{{res.3}}'><i class="lnr lnr-download"></i>下载</a></td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                        <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button previous" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
                                     {% if L.has_previous %}
-                                        <a href="?page={{ L.previous_page_number }}">previous</a>
+                                    <a href="?page={{ L.previous_page_number }}">previous</a>
                                     {% endif %}
-                             
-                                    <span class="current">
-                                        Page {{ L.number }} of {{ L.paginator.num_pages }}.
-                                    </span>
-                             
+                                </li>
+                                <!--<li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li>-->
+                                <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li>-->
+                                <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li>-->
+                                <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li>-->
+                                <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li>-->
+                                <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
                                     {% if L.has_next %}
-                                        <a href="?page={{ L.next_page_number }}">next</a>
+                                    <a href="?page={{ L.next_page_number }}">next</a>
                                     {% endif %}
-                                </span>
+                                </li>
+                            </ul>
+                            <div>
+                            <span class="current">
+                                Page {{ L.number }} of {{ L.paginator.num_pages }}.
+                            </span>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="pagination">-->
+                                <!--<span class="">-->
+                                    <!--{% if L.has_previous %}-->
+                                        <!--<a href="?page={{ L.previous_page_number }}"><i class="lnr-arrow-left"></i>previous</a>-->
+                                    <!--{% endif %}-->
+
+                                    <!--<span class="current">-->
+                                        <!--Page {{ L.number }} of {{ L.paginator.num_pages }}.-->
+                                    <!--</span>-->
+                                    <!--{% if L.has_next %}-->
+                                        <!--<a href="?page={{ L.next_page_number }}">next<i class="lnr-arrow-right"></i></a>-->
+                                    <!--{% endif %}-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    </div>
                 </div>
             </div>
         </div>

@@ -102,7 +102,6 @@
 
 
     </script>
-
     <!-- <script type="text/javascript">
         $(document).ready(function(){
 
@@ -176,8 +175,8 @@
     <div class="main">
         <div class="main-content">
             <div class="container-fluid">
-                <div class="content" style="padding:50px 0px;">
-                    <div class="header" style="padding:50px;">
+                <div class="content" style="margin-top:20px; margin-bottom: 50px">
+                    <div class="header" style="padding:50px 0px;">
                         <h1 class="text-center" style="color: #00AAFF;">网络媒体设计</h1>
                     </div>
                     <form role="form">
@@ -190,6 +189,73 @@
                         </div>
                     </form>
                 </div>
+                <div class="panel" id="result" style="margin:20px 0px;">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">搜索结果</h3>
+                    </div>
+                    <div class="panel-body table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th style="text-align:right">标题</th>
+                                <th>格式</th>
+                                <th>下载地址</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for res in L %}
+                            <tr>
+                                <td>{{res.0}}</td>
+                                <td style="text-align:right">{{res.1}}</td>
+                                <td >{{res.2}}</td>
+                                <td ><a href='{{res.3}}'><i class="lnr lnr-download"></i>下载</a></td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                        <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button previous" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
+                                    {% if L.has_previous %}
+                                    <a href="?page={{ L.previous_page_number }}">previous</a>
+                                    {% endif %}
+                                </li>
+                                <!--<li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li>-->
+                                <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li>-->
+                                <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li>-->
+                                <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li>-->
+                                <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li>-->
+                                <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
+                                    {% if L.has_next %}
+                                    <a href="?page={{ L.next_page_number }}">next</a>
+                                    {% endif %}
+                                </li>
+                            </ul>
+                            <div>
+                            <span class="current">
+                                Page {{ L.number }} of {{ L.paginator.num_pages }}.
+                            </span>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="pagination">-->
+                        <!--<span class="">-->
+                        <!--{% if L.has_previous %}-->
+                        <!--<a href="?page={{ L.previous_page_number }}"><i class="lnr-arrow-left"></i>previous</a>-->
+                        <!--{% endif %}-->
+
+                        <!--<span class="current">-->
+                        <!--Page {{ L.number }} of {{ L.paginator.num_pages }}.-->
+                        <!--</span>-->
+                        <!--{% if L.has_next %}-->
+                        <!--<a href="?page={{ L.next_page_number }}">next<i class="lnr-arrow-right"></i></a>-->
+                        <!--{% endif %}-->
+                        <!--</span>-->
+                        <!--</div>-->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -201,6 +267,7 @@
         </div>
     </footer>
 </div>
+
 <script src="../static/scripts/jquery.min.js"></script>
 <script src="../static/scripts/bootstrap.min.js"></script>
 <script src="../static/scripts/jquery.slimscroll.min.js"></script>

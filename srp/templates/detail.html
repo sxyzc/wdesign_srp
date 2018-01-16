@@ -196,7 +196,8 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                     <tr>
                         <th>序号</th>
                         <th style="text-align:right">标题</th>
-                        <th>下载</th>
+                        <th>格式</th>
+                        <th>下载地址</th>
                     </tr>
                     </thead>
                     {% for res in L %}
@@ -204,9 +205,25 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                         <td>{{res.0}}</td>
                         <td style="text-align:right">{{res.1}}</td>
                         <td >{{res.2}}</td>
+                        <td ><a href='{{res.3}}'>下载</a></td>
                     </tr>
                     {% endfor %}
                 </table>
+                <div class="pagination">
+                                <span class="step-links">
+                                    {% if L.has_previous %}
+                                        <a href="?page={{ L.previous_page_number }}">previous</a>
+                                    {% endif %}
+                             
+                                    <span class="current">
+                                        Page {{ L.number }} of {{ L.paginator.num_pages }}.
+                                    </span>
+                             
+                                    {% if L.has_next %}
+                                        <a href="?page={{ L.next_page_number }}">next</a>
+                                    {% endif %}
+                                </span>
+                </div>
             </div>
         </div>
     </div>

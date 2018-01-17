@@ -13,14 +13,45 @@ from urllib import urlopen
 import urllib2
 
 import re
+
+from .models import Res
 # Create your views here.
 
 #网址ip和domain
 site_ip = '222.16.42.167'
 site_main = 'wdesign'
 
+#遍历所有的节点  
+def dfs_for_database_menu(root_node, xml_path):
+    node_name = root_node.attrib.get('displayName', site_main)
+    #if level != 1 and root_node.attrib.get('hyperLinkFile', '123') != 'view_resource.htm':
+    #    return
+    
+    #遍历每个子节点  
+    children_node = root_node.getchildren()
+    if len(children_node) == 0:
+        
+        xml_suffix = ""
+        if root_node.attrib['hyperLinkFile'] == 'view_resource.htm':
+        	xml_suffix = 'resources_Database.xml'
+        elif root_node.attrib['hyperLinkFile'] == 'video_resources.aspx':
+        	xml_suffix = 'videos_Database.xml'
+        if xml_suffix == "":
+        	return
+        xml_path = xml_path + node_name + "/" + xml_suffix
+
+        L = get_xml_data(xml_path)
+        for i in L:
+        	#Res.objects.create(res_name=i.title_text,res_path=i.download_text,res_format=i.format_text,res_size=i.size_text,create_time=i.time_text,upload_user=i.user_text,key_word=i.key_word,other_01=i.other_01,other_02=i.other_02,other_03=i.other_03)
+        	Res.objects.create(res_name=i[0],res_path=i[1],res_format=i[2],res_size=i[3],create_time=i[4],upload_user=i[5],key_word=i[6],other_01=i[7],other_02=i[8],other_03=i[9])
+        
+        return
+    for child in children_node:
+        dfs_for_database_menu(child, xml_path+node_name + "/")
+    return
+
 #使用dfs来深搜menu，返回一条到底的路径string
-def dfs_for_xml(root_node, node_list):  
+def dfs_for_xml(root_node, node_list):
     node_name = root_node.attrib.get('displayName', site_main)
     #node_name = root_node.attrib['displayName']
 
@@ -39,33 +70,57 @@ def dfs_for_xml(root_node, node_list):
     else :#elif len(node_list) != 0:
     	return node_name + "/" + dfs_for_xml(children_node[node_list[0]],node_list[1:])
 
+def get_text(root_node,attrib_name):
+    temp = root_node.find(attrib_name)
+    if temp == None:
+    	return ""
+    else:
+    	if temp.text == None:
+    		return ""
+    	return temp.text
+
 #遍历资源xml来获得数据，没有用到dfs(只是起初取了dfs)
-def dfs_for_data(root_node, level, result_list,res_type,res_head):  
+def dfs_for_data(root_node, level, result_list,res_type,res_head):
     xml_ns = ''
     if res_type == 'resources_Database.xml':
     	xml_ns = '{http://tempuri.org/resources_Database.xsd}'
     elif res_type == 'videos_Database.xml':
     	xml_ns = '{http://tempuri.org/videos_Database.xsd}'
     print xml_ns+'title'
-    title_text = root_node.find(xml_ns+'title').text
-    type_text = ''
-    if res_type == 'resources_Database.xml':
-    	type_text = root_node.find(xml_ns+'fileFormat').text
-    elif res_type == 'videos_Database.xml':
-    	type_text = root_node.find(xml_ns+'videoFormat').text
-    ID_text = root_node.find(xml_ns+'ID').text
-    download_text = res_head+root_node.find(xml_ns+'resPath').text
-    online_text = res_head+'showResources.aspx?resPath='+root_node.find(xml_ns+'resPath').text+'&uploadMode=singleFile(wmv)'
-    res_size = root_node.find(xml_ns+'resSize').text
-
+    #title_text = root_node.find(xml_ns+'title').text
+    title_text = get_text(root_node, xml_ns+'title')
     
-    print title_text
-    print type_text
-    print download_text
-    print online_text
-    print res_size
+    format_text = ''
+    if res_type == 'resources_Database.xml':
+    	format_text = get_text(root_node, xml_ns+'fileFormat')
+    	#format_text = root_node.find(xml_ns+'fileFormat').text
+    elif res_type == 'videos_Database.xml':
+    	#format_text = root_node.find(xml_ns+'videoFormat').text
+    	format_text = get_text(root_node, xml_ns+'videoFormat')
+    #ID_text = root_node.find(xml_ns+'ID').text
+    #download_text = res_head+root_node.find(xml_ns+'resPath').text
+    #other_01 = res_head+'showResources.aspx?resPath='+root_node.find(xml_ns+'resPath').text+'&uploadMode=singleFile(wmv)'
+    
+    download_text = res_head + get_text(root_node, xml_ns+'resPath')
+    other_01 = res_head+'showResources.aspx?resPath='+get_text(root_node, xml_ns+'resPath')+'&uploadMode=singleFile(wmv)'
+    
+    size_text = get_text(root_node, xml_ns+'resSize')
+    other_02 = get_text(root_node, xml_ns+'teacher')
+    other_03 = get_text(root_node, xml_ns+'teachingFilePath')
+    time_text = get_text(root_node, xml_ns+'createTime')
+    user_text = get_text(root_node, xml_ns+'uploadUser')
+    key_word = get_text(root_node, xml_ns+'keyWord')
+    
+    # size_text = root_node.find(xml_ns+'resSize').text
+    # other_02 = root_node.find(xml_ns+'teacher').text
+    # other_03 = root_node.find(xml_ns+'teachingFilePath').text
+    # time_text = root_node.find(xml_ns+'createTime').text
+    # user_text = root_node.find(xml_ns+'uploadUser').text
+    # key_word = root_node.find(xml_ns+'keyWord').text
+    
     print '-----------'
-    temp_list =[ID_text, title_text, type_text, download_text, online_text, res_size]  
+    temp_list =[title_text,download_text,format_text,size_text,time_text,user_text,key_word,other_01,other_02,other_03]  
+    print temp_list
     #if level != 1 and root_node.attrib.get('hyperLinkFile', '123') != 'view_resource.htm':
     #    return
     result_list.append(temp_list)  
@@ -73,23 +128,21 @@ def dfs_for_data(root_node, level, result_list,res_type,res_head):
 #处理提交，即改session,然后跳转回detail
 def process_get(request):
     request.session['argStr'] = request.GET.get('argStr')
-    print request.session['argStr']
+    print '处理提交：' + request.session['argStr']
     return HttpResponseRedirect(reverse('srp:detail'))
 
 #读取数据，返回xml树节点，异常情况下在异常位置插入一个空格，避免异常编码
+#这是为了解决在视频库中遇到错误xml文件编码的bug
 def read_data(xml_text):
     try:
     	rt = ET.fromstring(xml_text)
     	return rt
     	pass
     except Exception as e:
-    	print '--------'
+    	print '解析xml遇到异常，尝试处理！'
     	print e
     	error_str = re.findall(r"\d+\.?\d*",str(e))
     	e_row, e_col = int(error_str[0]), int(error_str[1])
-    	# print str(e_row) + str(e_col)
-    	# print e_row
-    	# print e_col
     	col, row = 1, 1
     	nex_text = u""
     	for i in range(len(xml_text)):
@@ -98,19 +151,12 @@ def read_data(xml_text):
     			aa = xml_text[0:(i+e_col+2)]#错之前
     			bb = str('#32;')     #空格
     			cc = xml_text[(i+e_col+2):len(xml_text)]#错之后
-    			# print type(aa)
-    			# print type(bb)
-    			# print type(cc)
+    
     			nex_text = aa+bb+cc
-    			#nex_text = xml_text[0:(i+e_col+2)]+u'#32'+xml_text[(i+e_col+2):len(xml_text)]
-    			#print xml_text[(i+e_col):(i+e_col+4)]+u'@@@@@@@@'
+    
     			break
-    	#print nex_text.decode('utf-8').encode('gbk')
-    	#rt = ET.fromstring(nex_text)
-    	#return rt
+    	
     	return read_data(nex_text)
-    	#print row
-    	#raise
     else:
     	pass
     finally:
@@ -119,10 +165,8 @@ def read_data(xml_text):
 #从xml_path中解析数据
 def get_xml_data(xml_path):
     url_path = 'http://'+site_ip+'/'+xml_path
-    print type(url_path)
+    
     print url_path
-    #print url_path.decode('utf8').encode('gbk')
-    #url_path = urllib.quote(url_path.encode('utf8'), ':/')
 
     res_type = xml_path.split('/')[-1]
     url_path=url_path.encode('utf-8')
@@ -133,26 +177,13 @@ def get_xml_data(xml_path):
     
     #打开url数据
     data = urlopen(url_path)#.read().decode('ascii', 'ignore')  
-    #data = 'srp/static/videos_Database.xml'
-    #data_tree = ElementTree()
-    #data_text = data
+    
     data_text = data.read()
-    #data_text = "<title>Social Communication&#xB;&amp; SMAS</title>"
     print '!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-    #print data_text.decode('utf-8').encode('utf8')
-    #print data_text.decode('utf-8').encode('gbk')
-    dd = data_text#.decode('utf-8').encode('gbk')
-    #print dd
-    #data = data.encode('utf8')
-    #rt = data_tree.parse(data_text)
-
-    #parser = ET.XMLParser(encoding="utf-8")
-    #rt = ET.fromstring(dd, parser=parser)
-    #rt = read_data(data_text)
-    #rt = ET.parse(dd)
-    #with open(data,'r') as f:
-    #    dd = f.read()
-    rt = read_data(dd)
+    
+    #with open('srp/static/videos_Database.xml','r') as f:
+    #    data_text = f.read()
+    rt = read_data(data_text)
     res = []
     res_node = rt.getchildren()
     for i in res_node:
@@ -199,6 +230,19 @@ def detail(request):
 #默认页面下，先写一个默认的session，避免detail中未设session报错
 def index(request):
     request.session['argStr'] = '3|0|0|0'
+    return render(request,'index.html')
+
+def update_data(request):
+    print '更新数据，先删除数据'
+    L = Res.objects.all()
+    for i in L:
+    	i.delete()
+    print '删除数据完毕，准备更新'
+    tree = ElementTree()
+    file_name = 'srp/static/menu.xml'
+    root = tree.parse(file_name)
+    dfs_for_database_menu(root,'/')
+    print '更新完成'
     return render(request,'index.html')
 
 

@@ -207,13 +207,15 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                             </thead>
                             <tbody>
                             {% for res in L %}
+                            <!-- 资源信息为 
+    temp_list =[title_text,download_text,format_text,size_text,time_text,user_text,key_word,other_01,other_02,other_03]  -->
                             <tr>
-                                <td>{{res.0}}</td>
-                                <td style="text-align:right">{{res.1}}</td>
+                                <td>{{ forloop.counter }}</td>
+                                <td style="text-align:right">{{res.0}}</td>
                                 <td >{{res.2}}</td>
-                                <td >{{res.5}}</td>
-                                <td ><a href='{{res.3}}'><i class="lnr lnr-download"></i>下载</a></td>
-                                <td ><a href='{{res.4}}'><i class="lnr lnr-download"></i>观看</a></td>
+                                <td >{{res.3}}</td>
+                                <td ><a href='{{res.1}}'><i class="lnr lnr-download"></i>下载</a></td>
+                                <td ><a href='{{res.7}}'><i class="lnr lnr-download"></i>观看</a></td>
                             </tr>
                             {% endfor %}
                             </tbody>

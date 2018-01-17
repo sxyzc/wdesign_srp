@@ -55,12 +55,17 @@ def dfs_for_data(root_node, level, result_list,res_type,res_head):
     	type_text = root_node.find(xml_ns+'videoFormat').text
     ID_text = root_node.find(xml_ns+'ID').text
     download_text = res_head+root_node.find(xml_ns+'resPath').text
+    online_text = res_head+'showResources.aspx?resPath='+root_node.find(xml_ns+'resPath').text+'&uploadMode=singleFile(wmv)'
+    res_size = root_node.find(xml_ns+'resSize').text
+
     
     print title_text
     print type_text
     print download_text
+    print online_text
+    print res_size
     print '-----------'
-    temp_list =[ID_text, title_text, type_text, download_text]  
+    temp_list =[ID_text, title_text, type_text, download_text, online_text, res_size]  
     #if level != 1 and root_node.attrib.get('hyperLinkFile', '123') != 'view_resource.htm':
     #    return
     result_list.append(temp_list)  
@@ -114,7 +119,9 @@ def read_data(xml_text):
 #从xml_path中解析数据
 def get_xml_data(xml_path):
     url_path = 'http://'+site_ip+'/'+xml_path
+    print type(url_path)
     print url_path
+    #print url_path.decode('utf8').encode('gbk')
     #url_path = urllib.quote(url_path.encode('utf8'), ':/')
 
     res_type = xml_path.split('/')[-1]
@@ -165,7 +172,7 @@ def detail(request):
     root = tree.parse(file_name)
     
     xml_path = dfs_for_xml(root, node_list)    #读menu.xml来获得xml路径
-
+    request.session['cat_path'] = '/'.join(xml_path.split('/')[1:-1])
 
     L = get_xml_data(xml_path)     #获得数据
     L = list(reversed(L))      #反转列表

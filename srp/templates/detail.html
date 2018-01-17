@@ -190,8 +190,8 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
             <div class="container-fluid">
                 <div class="panel">
                     <div class="panel-heading">
-                        <!------------------ 希望可以在这里加入所在目录的名称 --------------->
-                        <h3 class="panel-title">目录的名称</h3>
+                        <!-- 希望可以在这里加入所在目录的名称 done -->
+                        <h3 class="panel-title">{{request.session.cat_path}}</h3>
                     </div>
                     <div class="panel-body table-responsive">
                         <table class="table">
@@ -200,7 +200,9 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                                 <th>序号</th>
                                 <th style="text-align:right">标题</th>
                                 <th>格式</th>
+                                <th>大小</th>
                                 <th>下载地址</th>
+                                <th>观看地址</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -209,7 +211,9 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                                 <td>{{res.0}}</td>
                                 <td style="text-align:right">{{res.1}}</td>
                                 <td >{{res.2}}</td>
+                                <td >{{res.5}}</td>
                                 <td ><a href='{{res.3}}'><i class="lnr lnr-download"></i>下载</a></td>
+                                <td ><a href='{{res.4}}'><i class="lnr lnr-download"></i>观看</a></td>
                             </tr>
                             {% endfor %}
                             </tbody>

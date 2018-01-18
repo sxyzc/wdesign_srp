@@ -145,6 +145,9 @@
         <div class="sidebar-scroll">
             <nav>
                 <ul  class="nav" id="menu">
+                    <li>
+                        <a href="{% url 'srp:search' %}">搜索</a>
+                    </li>
                     <script>
 
                         xmlDoc=loadXMLDoc("/static/menu.xml");
@@ -179,10 +182,10 @@
                     <div class="header" style="padding:50px 0px;">
                         <h1 class="text-center" style="color: #00AAFF;">网络媒体设计</h1>
                     </div>
-                    <form role="form">
+                    <form role="form" method="GET" action="{% url 'srp:search' %}">
                         <div class="form-group col-sm-10">
                             <label for="keyword" class="control-label sr-only">关键词</label>
-                            <input type="text" class="form-control" id="keyword" value="" placeholder="请输入关键词">
+                            <input type="text" class="form-control" id="keyword" value="" placeholder="请输入关键词" name="keyword">
                         </div>
                         <div class="form-group col-sm-2">
                             <button type="submit" class="btn btn-primary  btn-block">搜索</button>
@@ -191,7 +194,11 @@
                 </div>
                 <div class="panel" id="result" style="margin:20px 0px;">
                     <div class="panel-heading">
-                        <h3 class="panel-title">搜索结果</h3>
+                        <h3 class="panel-title">
+                            {%if search_key != "e6f135cc18852da1afd51f4f7d420905" %}
+                                "{{search_key}}" 的 搜索结果
+                            {% endif %}
+                        </h3>
                     </div>
                     <div class="panel-body table-responsive">
                         <table class="table">
@@ -200,16 +207,20 @@
                                 <th>序号</th>
                                 <th style="text-align:right">标题</th>
                                 <th>格式</th>
+                                <th>大小</th>
                                 <th>下载地址</th>
+                                <th>观看地址</th>
                             </tr>
                             </thead>
                             <tbody>
                             {% for res in L %}
                             <tr>
-                                <td>{{res.0}}</td>
-                                <td style="text-align:right">{{res.1}}</td>
-                                <td >{{res.2}}</td>
-                                <td ><a href='{{res.3}}'><i class="lnr lnr-download"></i>下载</a></td>
+                                <td>{{ forloop.counter }}</td>
+                                <td style="text-align:right">{{res.res_name}}</td>
+                                <td >{{res.res_format}}</td>
+                                <td >{{res.res_size}}</td>
+                                <td ><a href='{{res.res_path}}'><i class="lnr lnr-download"></i>下载</a></td>
+                                <td ><a href='{{res.other_01}}'><i class="lnr lnr-download"></i>观看</a></td>
                             </tr>
                             {% endfor %}
                             </tbody>
@@ -218,7 +229,7 @@
                             <ul class="pagination">
                                 <li class="paginate_button previous" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
                                     {% if L.has_previous %}
-                                    <a href="?page={{ L.previous_page_number }}">previous</a>
+                                    <a href="?keyword={{search_key}}&page={{ L.previous_page_number }}">previous</a>
                                     {% endif %}
                                 </li>
                                 <!--<li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li>-->
@@ -228,7 +239,7 @@
                                 <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li>-->
                                 <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
                                     {% if L.has_next %}
-                                    <a href="?page={{ L.next_page_number }}">next</a>
+                                    <a href="?keyword={{search_key}}&page={{ L.next_page_number }}">next</a>
                                     {% endif %}
                                 </li>
                             </ul>

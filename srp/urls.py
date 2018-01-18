@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^index', views.index, name='index'),
     url(r'^detail', views.detail, name='detail'),
     url(r'^process_get', views.process_get, name='process'),
+    url(r'^search', views.process_search, name='search'),
     url(r'^update_data', views.update_data, name='update_data'),
     # url(r'^mainPage', views.mainPage),
     # url(r'^login', views.login, name='login'),

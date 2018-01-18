@@ -120,7 +120,7 @@ def dfs_for_data(root_node, level, result_list,res_type,res_head):
     
     print '-----------'
     temp_list =[title_text,download_text,format_text,size_text,time_text,user_text,key_word,other_01,other_02,other_03]  
-    print temp_list
+    #print temp_list
     #if level != 1 and root_node.attrib.get('hyperLinkFile', '123') != 'view_resource.htm':
     #    return
     result_list.append(temp_list)  
@@ -130,6 +130,39 @@ def process_get(request):
     request.session['argStr'] = request.GET.get('argStr')
     print '处理提交：' + request.session['argStr']
     return HttpResponseRedirect(reverse('srp:detail'))
+
+#处理搜索请求
+def process_search(request):
+    
+    keyword = request.GET.get('keyword')
+    print '处理搜索'
+    L = []
+    if keyword != None and keyword!="":
+        request.session['search_key'] = keyword
+    else:
+        keyword = "e6f135cc18852da1afd51f4f7d420905"   #不可能成为关键字的字符串就行，这里是一个字符串的md5
+    
+    res = Res.objects.all()
+    for i in res:
+    	if i.res_name.count(keyword) > 0:
+    		L.append(i)
+
+    #以下是分页操作
+    paginator = Paginator(L, 10) # 每页10条
+
+    page = request.GET.get('page')
+    if page is None:
+    	page = 1
+    print page
+    try:
+        ress = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        ress = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        ress = paginator.page(paginator.num_pages)
+    return render(request,'search.html',{'L':ress,'search_key':keyword})
 
 #读取数据，返回xml树节点，异常情况下在异常位置插入一个空格，避免异常编码
 #这是为了解决在视频库中遇到错误xml文件编码的bug
@@ -209,7 +242,7 @@ def detail(request):
     L = list(reversed(L))      #反转列表
     
     #以下是分页操作
-    paginator = Paginator(L, 5) # Show 10 contacts per page
+    paginator = Paginator(L, 10) # 每页10条
 
     page = request.GET.get('page')
     if page is None:

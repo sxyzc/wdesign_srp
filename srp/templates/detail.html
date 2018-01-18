@@ -158,6 +158,9 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
         <div class="sidebar-scroll">
             <nav>
                 <ul  class="nav" id="menu">
+                    <li>
+                        <a href="{% url 'srp:search' %}">搜索</a>
+                    </li>
                     <script>
 
                         xmlDoc=loadXMLDoc("/static/menu.xml");

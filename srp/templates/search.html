@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <style type="text/css">
-        .menu-li-style{border:1px solid #B40607;}//第一层设置属性方便区分
-                                                   #menu li ul{border:1px solid #707F8C; display: none;}//第一层以后的设置属性
-    </style>
+    <!--<style type="text/css">-->
+        <!--.menu-li-style{border:1px solid #B40607;}//第一层设置属性方便区分-->
+                                                   <!--#menu li ul{border:1px solid #707F8C; display: none;}//第一层以后的设置属性-->
+    <!--</style>-->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/linearicons/style.css">
@@ -146,7 +146,7 @@
             <nav>
                 <ul  class="nav" id="menu">
                     <li>
-                        <a href="{% url 'srp:search' %}">搜索</a>
+                        <a href="{% url 'srp:search' %}" class="active"><i class="lnr lnr-magnifier"></i>搜索</a>
                     </li>
                     <script>
 
@@ -167,9 +167,9 @@
                         //dfs(x)
 
                     </script>
-                    <li>
-                        <a href="#">asdfs</a>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#">asdfs</a>-->
+                    <!--</li>-->
                 </ul>
             </nav>
         </div>
@@ -178,8 +178,8 @@
     <div class="main">
         <div class="main-content">
             <div class="container-fluid">
-                <div class="content" style="margin-top:20px; margin-bottom: 50px">
-                    <div class="header" style="padding:50px 0px;">
+                <div class="content" style=" margin-bottom: 50px">
+                    <div class="header" style="padding:30px 0px;">
                         <h1 class="text-center" style="color: #00AAFF;">网络媒体设计</h1>
                     </div>
                     <form role="form" method="GET" action="{% url 'srp:search' %}">
@@ -188,16 +188,15 @@
                             <input type="text" class="form-control" id="keyword" value="" placeholder="请输入关键词" name="keyword">
                         </div>
                         <div class="form-group col-sm-2">
-                            <button type="submit" class="btn btn-primary  btn-block">搜索</button>
+                            <button id="search-btn" type="submit" class="btn btn-primary  btn-block" onclick="clickSearch">搜索</button>
                         </div>
                     </form>
                 </div>
+                {%if search_key != "e6f135cc18852da1afd51f4f7d420905" %}
                 <div class="panel" id="result" style="margin:20px 0px;">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            {%if search_key != "e6f135cc18852da1afd51f4f7d420905" %}
                                 "{{search_key}}" 的 搜索结果
-                            {% endif %}
                         </h3>
                     </div>
                     <div class="panel-body table-responsive">
@@ -220,7 +219,7 @@
                                 <td >{{res.res_format}}</td>
                                 <td >{{res.res_size}}</td>
                                 <td ><a href='{{res.res_path}}'><i class="lnr lnr-download"></i>下载</a></td>
-                                <td ><a href='{{res.other_01}}'><i class="lnr lnr-download"></i>观看</a></td>
+                                <td ><a href='{{res.other_01}}'><i class="lnr lnr-eye"></i>观看</a></td>
                             </tr>
                             {% endfor %}
                             </tbody>
@@ -229,7 +228,7 @@
                             <ul class="pagination">
                                 <li class="paginate_button previous" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
                                     {% if L.has_previous %}
-                                    <a href="?keyword={{search_key}}&page={{ L.previous_page_number }}">previous</a>
+                                    <a href="?keyword={{search_key}}&page={{ L.previous_page_number }}">上一页</a>
                                     {% endif %}
                                 </li>
                                 <!--<li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li>-->
@@ -239,13 +238,13 @@
                                 <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li>-->
                                 <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
                                     {% if L.has_next %}
-                                    <a href="?keyword={{search_key}}&page={{ L.next_page_number }}">next</a>
+                                    <a href="?keyword={{search_key}}&page={{ L.next_page_number }}">下一页</a>
                                     {% endif %}
                                 </li>
                             </ul>
                             <div>
                             <span class="current">
-                                Page {{ L.number }} of {{ L.paginator.num_pages }}.
+                                当前第 {{ L.number }} 页 共 {{ L.paginator.num_pages }} 页.
                             </span>
                             </div>
                         </div>
@@ -267,6 +266,7 @@
                         <!--</div>-->
                     </div>
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>

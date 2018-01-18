@@ -159,7 +159,7 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
             <nav>
                 <ul  class="nav" id="menu">
                     <li>
-                        <a href="{% url 'srp:search' %}">搜索</a>
+                        <a href="{% url 'srp:search' %}"><i class="lnr lnr-magnifier"></i>搜索</a>
                     </li>
                     <script>
 
@@ -180,9 +180,9 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                         //dfs(x)
 
                     </script>
-                    <li>
-                        <a href="#">asdfs</a>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#">asdfs</a>-->
+                    <!--</li>-->
                 </ul>
             </nav>
         </div>
@@ -218,7 +218,7 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                                 <td >{{res.2}}</td>
                                 <td >{{res.3}}</td>
                                 <td ><a href='{{res.1}}'><i class="lnr lnr-download"></i>下载</a></td>
-                                <td ><a href='{{res.7}}'><i class="lnr lnr-download"></i>观看</a></td>
+                                <td ><a href='{{res.7}}'><i class="lnr lnr-eye"></i>观看</a></td>
                             </tr>
                             {% endfor %}
                             </tbody>
@@ -227,7 +227,7 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                             <ul class="pagination">
                                 <li class="paginate_button previous" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
                                     {% if L.has_previous %}
-                                    <a href="?page={{ L.previous_page_number }}">previous</a>
+                                    <a href="?page={{ L.previous_page_number }}">上一页</a>
                                     {% endif %}
                                 </li>
                                 <!--<li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li>-->
@@ -237,32 +237,16 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                                 <!--<li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li>-->
                                 <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
                                     {% if L.has_next %}
-                                    <a href="?page={{ L.next_page_number }}">next</a>
+                                    <a href="?page={{ L.next_page_number }}">下一页</a>
                                     {% endif %}
                                 </li>
                             </ul>
                             <div>
                             <span class="current">
-                                Page {{ L.number }} of {{ L.paginator.num_pages }}.
+                                当前第 {{ L.number }} 页 共 {{ L.paginator.num_pages }} 页.
                             </span>
                             </div>
                         </div>
-
-
-                        <!--<div class="pagination">-->
-                                <!--<span class="">-->
-                                    <!--{% if L.has_previous %}-->
-                                        <!--<a href="?page={{ L.previous_page_number }}"><i class="lnr-arrow-left"></i>previous</a>-->
-                                    <!--{% endif %}-->
-
-                                    <!--<span class="current">-->
-                                        <!--Page {{ L.number }} of {{ L.paginator.num_pages }}.-->
-                                    <!--</span>-->
-                                    <!--{% if L.has_next %}-->
-                                        <!--<a href="?page={{ L.next_page_number }}">next<i class="lnr-arrow-right"></i></a>-->
-                                    <!--{% endif %}-->
-                                <!--</span>-->
-                        <!--</div>-->
                     </div>
                 </div>
             </div>

@@ -143,14 +143,23 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
 <div id="wrapper">
     <!--NAVBAR-->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="brand" style="display: block;font-size: 25px">
+        <div class="brand" style="font-size: 25px">
             <a href="index.html"><i class="fa fa-home"></i>网络媒体设计</a>
         </div>
         <div class="container-fluid">
-            <div class="navbar-btn">
-                <!--<input type="checkbox" id="toggle-checkbox">-->
-                <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+            <div class="navbar-btn visible-sm visible-xs">
+                <button type="button"><a href="javascript:history.go(-1);"><i class="lnr lnr-arrow-left"></i></a></button>
             </div>
+            <div class="navbar-btn navbar-btn-right">
+                <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-menu"></i></button>
+            </div>
+            <form role="form" method="GET" action="{% url 'srp:search' %}" class="navbar-form navbar-left" style="display: block; margin-left: 10px">
+                <div class="input-group" style="width: 100%">
+                    <!--<label for="keyword" class="control-label sr-only">关键词</label>-->
+                    <input type="text" class="form-control" id="keyword" value="" placeholder="搜索" name="keyword">
+                    <span class="input-group-btn"><button id="search-btn" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button></span>
+                </div>
+            </form>
         </div>
     </nav>
     <!--LEFT SIDEBAR-->
@@ -158,9 +167,9 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
         <div class="sidebar-scroll">
             <nav>
                 <ul  class="nav" id="menu">
-                    <li>
-                        <a href="{% url 'srp:search' %}"><i class="lnr lnr-magnifier"></i>搜索</a>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="{% url 'srp:search' %}"><i class="lnr lnr-magnifier"></i>搜索</a>-->
+                    <!--</li>-->
                     <script>
 
                         xmlDoc=loadXMLDoc("/static/menu.xml");
@@ -190,39 +199,42 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
 
     <div class="main">
         <div class="main-content">
-            <div class="container-fluid">
-                <div class="panel">
-                    <div class="panel-heading">
+            <div class="container-fluid" style="padding: 0px 0px">
+                <div class="" style="background-color: #ffffff">
+                    <div class="panel-heading" style="margin-bottom: 10px">
                         <!-- 希望可以在这里加入所在目录的名称 done -->
-                        <h3 class="panel-title">{{request.session.cat_path}}</h3>
+                        <h3 class="panel-title" style="font-size: 20px">{{request.session.cat_path}}</h3>
                     </div>
-                    <div class="panel-body table-responsive">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>序号</th>
-                                <th style="text-align:right">标题</th>
-                                <th>格式</th>
-                                <th>大小</th>
-                                <th>下载地址</th>
-                                <th>观看地址</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {% for res in L %}
-                            <!-- 资源信息为 
-    temp_list =[title_text,download_text,format_text,size_text,time_text,user_text,key_word,other_01,other_02,other_03]  -->
-                            <tr>
-                                <td>{{ forloop.counter }}</td>
-                                <td style="text-align:right">{{res.0}}</td>
-                                <td >{{res.2}}</td>
-                                <td >{{res.3}}</td>
-                                <td ><a href='{{res.1}}'><i class="lnr lnr-download"></i>下载</a></td>
-                                <td ><a href='{{res.7}}'><i class="lnr lnr-eye"></i>观看</a></td>
-                            </tr>
-                            {% endfor %}
-                            </tbody>
-                        </table>
+                    <div class="panel-body no-padding">
+                        <div class="">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th style="text-align:right">标题</th>
+                                    <th>格式</th>
+                                    <th>大小</th>
+                                    <th>下载</th>
+                                    <th>观看</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for res in L %}
+                                <!-- 资源信息为
+        temp_list =[title_text,download_text,format_text,size_text,time_text,user_text,key_word,other_01,other_02,other_03]  -->
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td style="text-align:right">{{res.0}}</td>
+                                    <td>{{res.2}}</td>
+                                    <td>{{res.3}}</td>
+                                    <td><a href='{{res.1}}'><i class="lnr lnr-download"><span class="hidden-xs">下载</span></i></a></td>
+                                    <td><a href='{{res.7}}'><i class="lnr lnr-eye"></i><span class="hidden-xs">观看</span></a></td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+
+                        </div>
                         <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
                             <ul class="pagination">
                                 <li class="paginate_button previous" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">

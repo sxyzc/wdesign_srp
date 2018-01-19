@@ -131,14 +131,23 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
 <div id="wrapper">
 <!--NAVBAR-->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="brand" style="display: block;font-size: 25px">
+        <div class="brand" style="font-size: 25px">
             <a href="index.html"><i class="fa fa-home"></i>网络媒体设计</a>
         </div>
         <div class="container-fluid">
-        <div class="navbar-btn">
-            <!--<input type="checkbox" id="toggle-checkbox">-->
-            <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
-        </div>
+            <!--<div class="navbar-btn visible-sm visible-xs">-->
+                <!--<button type="button"><a href="javascript:history.go(-1);"><i class="lnr lnr-arrow-left"></i></a></button>-->
+            <!--</div>-->
+            <div class="navbar-btn navbar-btn-right">
+                <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-menu"></i></button>
+            </div>
+            <form role="form" method="GET" action="{% url 'srp:search' %}" class="navbar-form navbar-left" style="display: block; margin-left: 10px">
+                <div class="input-group">
+                    <!--<label for="keyword" class="control-label sr-only">关键词</label>-->
+                    <input type="text" class="form-control" id="keyword" value="" placeholder="搜索" name="keyword">
+                    <span class="input-group-btn"><button id="search-btn" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button></span>
+                </div>
+            </form>
         </div>
     </nav>
     <!--LEFT SIDEBAR-->
@@ -146,9 +155,9 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
         <div class="sidebar-scroll">
             <nav>
                 <ul  class="nav" id="menu">
-                    <li>
-                        <a href="{% url 'srp:search' %}"><i class="lnr lnr-magnifier"></i>搜索</a>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="{% url 'srp:search' %}"><i class="lnr lnr-magnifier"></i>搜索</a>-->
+                    <!--</li>-->
                     <script>
 
                         xmlDoc=loadXMLDoc("/static/menu.xml");

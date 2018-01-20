@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/linearicons/style.css">
     <link rel="stylesheet" href="../static/css/main.css">
-    <!--<link rel="stylesheet" href="../static/css/mystyle.css">-->
+    <link rel="stylesheet" href="../static/css/mystyle.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script>
         function loadXMLDoc(dname)
@@ -57,7 +57,7 @@
             if(!is_leaf){
                 document.write('<li><a href="#')
                 document.write(root_node.getAttribute("displayName"))
-                document.write('" data-toggle="collapse" class="collapsed"><i class="lnr lnr-menu"></i><span>')
+                document.write('" data-toggle="collapse" class="collapsed"><i class="fa fa-bars"></i><span>')
                 document.write(root_node.getAttribute("displayName"))
                 document.write(argStr)
                 document.write('</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>')
@@ -100,7 +100,6 @@
             console.log("--------      "+cnt)
         }
 
-
     </script>
     <!-- <script type="text/javascript">
         $(document).ready(function(){
@@ -130,23 +129,23 @@
 <div id="wrapper">
     <!--NAVBAR-->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="brand" style="font-size: 25px">
+        <div class="brand">
             <a href="index.html"><i class="fa fa-home"></i>网络媒体设计</a>
         </div>
         <div class="container-fluid">
             <div class="navbar-btn visible-sm visible-xs">
-                <button type="button"><a href="javascript:history.go(-1);"><i class="lnr lnr-arrow-left"></i></a></button>
+                <button type="button"><a href="javascript:history.go(-1);"><i class="fa fa-arrow-left"></i></a></button>
             </div>
-            <form role="form" method="GET" action="{% url 'srp:search' %}" class="navbar-form navbar-left" style="display: block; margin-left: 0px">
-                <div class="input-group" style="width: 100%">
+            <div class="navbar-btn navbar-btn-right">
+                <button type="button" class="btn-toggle-fullwidth"><i class="fa fa-bars"></i></button>
+            </div>
+            <form role="form" method="GET" action="{% url 'srp:search' %}" class="navbar-form navbar-right">
+                <div class="input-group">
                     <!--<label for="keyword" class="control-label sr-only">关键词</label>-->
-                    <input type="text" class="form-control" id="keyword" value="" placeholder="搜索" name="keyword">
-                    <span class="input-group-btn"><button id="search-btn" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button></span>
+                    <input type="text" class="form-control search-input" id="keyword" value="" placeholder="搜索" name="keyword">
+                    <span class="input-group-btn"><button id="search-btn" type="submit" class="btn"><i class="fa fa-search fa-2x"></i></button></span>
                 </div>
             </form>
-            <div class="navbar-btn navbar-btn-right">
-                <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-menu"></i></button>
-            </div>
         </div>
     </nav>
     <!--LEFT SIDEBAR-->
@@ -202,9 +201,9 @@
                     <!--</form>-->
                 <!--</div>-->
                 {%if search_key != "e6f135cc18852da1afd51f4f7d420905" %}
-                <div class="" id="result" style="background-color: #ffffff">
+                <div class="table-panel" id="result">
                     <div class="panel-heading">
-                        <h3 class="panel-title" style="font-size: 20px">
+                        <h3 class="panel-title">
                                 "{{search_key}}" 的 搜索结果
                         </h3>
                     </div>
@@ -227,8 +226,8 @@
                                 <td style="text-align:right">{{res.res_name}}</td>
                                 <td >{{res.res_format}}</td>
                                 <td >{{res.res_size}}</td>
-                                <td ><a href='{{res.res_path}}'><i class="lnr lnr-download"></i><span class="hidden-xs">下载</span></a></td>
-                                <td ><a href='{{res.other_01}}'><i class="lnr lnr-eye"></i><span class="hidden-xs">观看</span></a></td>
+                                <td ><a href='{{res.res_path}}'><i class="fa fa-download"></i><span class="hidden-xs">下载</span></a></td>
+                                <td ><a href='{{res.other_01}}'><i class="fa fa-eye"></i><span class="hidden-xs">观看</span></a></td>
                             </tr>
                             {% endfor %}
                             </tbody>
@@ -292,5 +291,7 @@
 <script src="../static/scripts/bootstrap.min.js"></script>
 <script src="../static/scripts/jquery.slimscroll.min.js"></script>
 <script src="../static/scripts/klorofil-common.js"></script>
+<script src="../static/scripts/jquery.bootstrap-autohidingnavbar.js"></script>
+<script>$(".navbar-fixed-top").autoHidingNavbar();</script>
 </body>
 </html>

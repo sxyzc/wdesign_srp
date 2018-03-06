@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
+from django.template import loader
 from xml.etree.ElementTree import ElementTree
 from django.http import HttpResponseRedirect, Http404,HttpResponse
 from django.urls import reverse
@@ -130,6 +131,21 @@ def process_get(request):
     request.session['argStr'] = request.GET.get('argStr')
     print '处理提交：' + request.session['argStr']
     return HttpResponseRedirect(reverse('srp:detail'))
+
+def viewer(request):
+    print '处理viewerjs：'
+    filename = request.GET.get('filename')
+    #request.META['Access-Control-Allow-Origin']='*'
+    template = loader.get_template('viewer.html')
+    response = HttpResponse(template.render({'filename':filename}, request))
+    response['Access-Control-Allow-Origin']='*'
+    print filename
+    response['Access-Control-Allow-Origin'] = '*' 
+    response['Access-Control-Allow-Methods'] = 'POST, GET, OPTIONS' 
+    response['Access-Control-Max-Age'] = '1000' 
+    response['Access-Control-Allow-Headers'] = '*' 
+    return response
+    #return render(request,"viewer.html",{'filename':filename})
 
 #处理搜索请求
 def process_search(request):

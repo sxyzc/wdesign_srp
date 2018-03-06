@@ -208,15 +208,15 @@ console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
                                 </thead>
                                 <tbody>
                                 {% for res in L %}
-                                <!-- 资源信息为
+                                <!-- 资源信息为  对应数字编号取值，如res.0表示title_text
         temp_list =[title_text,download_text,format_text,size_text,time_text,user_text,key_word,other_01,other_02,other_03]  -->
                                 <tr>
                                     <td>{{ forloop.counter }}</td>
                                     <td style="text-align:right">{{res.0}}</td>
                                     <td>{{res.2}}</td>
                                     <td>{{res.3}}</td>
-                                    <td ><a href='{{res.res_path}}'><i class="fa fa-download"></i><span class="hidden-xs">下载</span></a></td>
-                                    <td ><a href='{{res.other_01}}'><i class="fa fa-eye"></i><span class="hidden-xs">观看</span></a></td>
+                                    <td ><a href='{{res.1}}'><i class="fa fa-download"></i><span class="hidden-xs">下载</span></a></td>
+                                    <td ><a href='{{res.7}}'><i class="fa fa-eye"></i><span class="hidden-xs">观看</span></a></td>
                                 </tr>
                                 {% endfor %}
                                 </tbody>

@@ -293,5 +293,3 @@ def update_data(request):
     dfs_for_database_menu(root,'/')
     print '更新完成'
     return render(request,'index.html')
-
-

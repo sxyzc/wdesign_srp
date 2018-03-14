@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>网络媒体设计</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/linearicons/style.css">
+
+    <link rel="stylesheet" href="../../static/css/mystyle.css">
+    <script src="../../static/scripts/jquery.min.js"></script>
+    <script src="../../static/scripts/bootstrap.min.js"></script>
+    <script src="../../static/scripts/srp.js"></script>
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>-->
+    <script>
+        function loadXMLDoc(dname)
+        {
+            if (window.XMLHttpRequest)
+            {
+                xhttp=new XMLHttpRequest();
+            }
+            else
+            {
+                xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xhttp.open("GET",dname,false);
+            xhttp.send();
+            return xhttp.responseXML;
+        }
+        mm = 1
+        function dfs(root_node,argStr)
+        {
+            //mm +=1
+            //if(mm>20)return
+            console.log(root_node.nodeName)
+            var x=root_node.childNodes;
+            //    document.write('<li is_clicked="off">')
+            //    <!--document.write('<a href="test.html">')-->
+            // document.write('<a href="{% url 'srp:process' %}?argStr=')
+            // document.write(argStr)
+            // document.write('">')
+            //    document.write(root_node.getAttribute("displayName"))
+            //    document.write(argStr)
+            //    document.write('</a>')
+
+            var is_leaf=1
+            for (var i=0;i<x.length;i++)
+            {
+                if (x[i].nodeType==1)
+                {
+                    is_leaf = 0;break;
+                }
+            }
+            if(!is_leaf){
+                document.write('<li><a href="#')
+                document.write(root_node.getAttribute("displayName"))
+                document.write('" data-toggle="collapse" class="collapsed"><i class="lnr lnr-menu"></i><span>')
+                document.write(root_node.getAttribute("displayName"))
+                document.write(argStr)
+                document.write('</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>')
+                document.write('<div id="')
+                document.write(root_node.getAttribute("displayName"))
+                document.write('" class="collapse "><ul class="nav" style="padding-left: 15px;">')
+            }else{
+                document.write('<li><a href="{% url 'srp:process' %}?argStr=')
+                document.write(argStr)
+                document.write('"><i class="lnr lnr-tag" style="font-size: 15px;"></i>')
+                document.write(root_node.getAttribute("displayName"))
+                document.write(argStr)
+                document.write('</a></li>')
+            }
+            //document.write('<ul>')
+            console.log("+++++++    "+x.length)
+            console.log(root_node.getAttribute("displayName")+"!!!!!    "+is_leaf)
+
+            //console.log("+++++++")
+
+            var cnt=0
+            for (var i=0;i<x.length;i++)
+            {
+                if (x[i].nodeType==1)
+                {//Process only element nodes (type 1)
+                    //console.log(x[i].nodeName)
+
+                    //if(cnt==0){
+                    //    document.write('<ul class="nav">')
+                    //}
+                    cnt=cnt+1
+                    console.log("$$$$$$$$$$$$")
+                    dfs(x[i],argStr+"|"+(cnt-1))
+                    // document.write(x[i].nodeName);
+                    // document.write("<br />");
+                }
+            }
+            if(cnt>0)document.write('</ul></div></li>')
+
+            console.log("--------      "+cnt)
+        }
+
+    </script>
+</head>
+<body>
+<!--NAVBAR-->
+<nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="50">
+    <!--<div class="brand">-->
+    <!--<a href="index.html"><i class="fa fa-home"></i>网络媒体设计</a>-->
+    <!--</div>-->
+    <div class="container-fluid no-padding navbar-container">
+        <!--<div class="navbar-btn visible-sm visible-xs">-->
+        <!--<button type="button"><a href="javascript:history.go(-1);"><i class="fa fa-arrow-left"></i></a></button>-->
+        <!--</div>-->
+        <div class="navbar-btn">
+            <button id="navbar-btn"  class="btn"><i class="lnr lnr-menu"></i></button>
+        </div>
+        <form role="form" method="GET" action="{% url 'srp:search' %}" class="navbar-form">
+            <div class="input-group">
+                <!--<label for="keyword" class="control-label sr-only">关键词</label>-->
+                <input type="text" class="form-control search-input" id="keyword" value="" placeholder="搜索" name="keyword">
+                <span class="input-group-btn"><button id="search-btn" type="submit" class="btn"><i class="fa fa-search"></i></button></span>
+            </div>
+        </form>
+    </div>
+</nav>
+<!--LEFT SIDEBAR-->
+<div id="sidebar-nav" class="sidebar" >
+    <div class="sidebar-scroll">
+        <nav>
+            <ul  class="nav" id="menu">
+                <!--新增首页 课程简介-->
+                <li>
+                    <a href="{% url 'srp:index' %}"><i class="lnr lnr-home"></i>首页</a>
+                </li>
+                <li>
+                    <a href="#课程简介" data-toggle="collapse" class="collapsed"><i class="lnr lnr-book"></i><span>课程简介</span><i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                    <div id="课程简介" class="collapse">
+                        <ul class="nav" style="padding-left: 15px;">
+                            <li><a href="i1.html"><i class="lnr lnr-tag"></i>课程简介</a></li>
+                            <li><a href="i2.html"><i class="lnr lnr-tag"></i>教学大纲</a></li>
+                            <li><a href="i3.html"><i class="lnr lnr-tag"></i>教学日历</a></li>
+                            <li><a href="i4.html"><i class="lnr lnr-tag"></i>课程特色</a></li>
+                            <li><a href="i5.html"><i class="lnr lnr-tag"></i>学习者分析</a></li>
+                            <li>
+                                <a href="#教材参考" data-toggle="collapse" class="collapsed"><i class="lnr lnr-tag"></i>教材参考<i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                                <div id="教材参考" class="collapse">
+                                    <ul class="nav" style="padding-left: 15px;">
+                                        <li><a href="i6_1.html"><i class="lnr lnr-tag"></i>学术理论类</a></li>
+                                        <li><a href="i6_2.html"><i class="lnr lnr-tag"></i>案例应用类</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <script>
+
+                    xmlDoc=loadXMLDoc("/static/menu.xml");
+
+                    //x=xmlDoc.documentElement.childNodes[0];
+                    var x=xmlDoc.getElementsByTagName("menuNodes")[0].childNodes;
+                    var cnt =0
+                    for(var i=0;i<x.length;i++){
+                        if (x[i].nodeType==1){
+                            cnt+=1
+                            if(x[i].getAttribute("displayName")=="课程资源")
+                                dfs(x[i],(cnt-1)+"")
+                        }
+                    }
+
+
+                    //dfs(x)
+
+                </script>
+                <!--<li>-->
+                <!--<a href="#">asdfs</a>-->
+                <!--</li>-->
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="main">
+    <div class="header-content ui-header-content">
+        <div class="container">
+            <div class="row">
+                <h1 class="content-heading">教学日历</h1>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="container-fluid" >
+            <div class="col-lg-12 col-sm-12">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-heading" style="text-align: center">
+                                <h2><u>华南理工大学教学日历</u></h2>
+                                <p><small>(2011—2012学年度第  <u>2</u> 学期)</small></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3"><p>学院 <u> 新闻与传播学院</u></p></div>
+                                <div class="col-sm-3"><p>专业 <u> 编辑出版学 </u></p></div>
+                                <div class="col-sm-3"><p>年级    <u>2010级</u></p></div>
+                                <div class="col-sm-3"><p>班别  <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3"><p>课程名称 <u>网络媒体设计</u></p></div>
+                                <div class="col-sm-2"><p>课程编号 <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u></p></div>
+                                <div class="col-sm-2"><p>学分 <u>3</u></p></div>
+                                <div class="col-sm-2"><p>任课教师 <u>冯毅</u></p></div>
+                                <div class="col-sm-3"><p>教师编号 <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4"><p>总学数  <u>48</u> ，其中，讲授 <u>36</u>  学时，</p></div>
+                                <div class="col-sm-4"><p>实验 <u>12</u>  学时，上机 <u>&nbsp;&nbsp;&nbsp;&nbsp;</u> 学时，</p></div>
+                                <div class="col-sm-4"><p>自学(含导读) <u>&nbsp;&nbsp;&nbsp;&nbsp;</u>  学时 </p></div>
+                            </div>
+                            <div class="panel" style="border: 1px solid #ccc">
+                                <div class="panel-heading" style="text-align: center">教     学       作      业      类      别      及      内      容</div>
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>讲  授  内  容</th>
+                                            <th>时数</th>
+                                            <th>课外作业/课外活动</th>
+                                            <th>时数</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1.       第一章     导论</td>
+                                            <td>2</td>
+                                            <td>调查分析作业</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.       视觉传达</td>
+                                            <td>2</td>
+                                            <td>图像作业</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.       第二章     网络媒体与传播理论分析</td>
+                                            <td>3</td>
+                                            <td>动画作业</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5.       第三章     网络媒体形态与规范</td>
+                                            <td>3</td>
+                                            <td>网页作业</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6.       第三章     网络媒体形态与规范</td>
+                                            <td>3</td>
+                                            <td>网页作业</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7.       创作作业及影视传达</td>
+                                            <td>3</td>
+                                            <td>创作作业</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8.       网页制作技术（原理及简单HTML）</td>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9.       第四章     网络媒体艺术与文化</td>
+                                            <td>4</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.   第五章     网络媒体商业与运营</td>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11.   第六章  媒体政策、法律与伦理</td>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12.   作业评析</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13.   复习</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6"><p>任课教师签名： </p></div>
+                                <div class="col-sm-6"><p>学院负责人签名： </p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6"><p>20&nbsp;&nbsp;年&nbsp;&nbsp;月 &nbsp;&nbsp; 日 </p></div>
+                                <div class="col-sm-6"><p>20&nbsp;&nbsp;年 &nbsp;&nbsp;月 &nbsp;&nbsp; 日</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<footer>
+    <div class="container-fluid">
+        <p class="copyright">华南理工大学 教育技术中心 版权所有</p>
+    </div>
+</footer>
+<!--遮罩层-->
+<div id="mask" class="mask"></div>
+<script src="../../static/scripts/jquery.slimscroll.min.js"></script>
+<script src="../../static/scripts/klorofil-common.js"></script>
+</body>
+</html>

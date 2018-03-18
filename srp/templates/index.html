@@ -163,7 +163,7 @@
                     for(var i=0;i<x.length;i++){
                         if (x[i].nodeType==1){
                             cnt+=1
-                            if(x[i].getAttribute("displayName")=="课程资源")
+                            if(x[i].getAttribute("displayName")=="课程资源"||x[i].getAttribute("displayName")=="课程简介")
                                 dfs(x[i],(cnt-1)+"")
                         }
                     }

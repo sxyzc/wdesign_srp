@@ -130,7 +130,65 @@ def dfs_for_data(root_node, level, result_list,res_type,res_head):
 def process_get(request):
     request.session['argStr'] = request.GET.get('argStr')
     print '处理提交：' + request.session['argStr']
+    print request.GET.get('argStr').split('|')[0]
+    if request.GET.get('argStr').split('|')[0] == '1':
+        return HttpResponseRedirect(reverse('srp:introduce'))#为课程简介
     return HttpResponseRedirect(reverse('srp:detail'))
+
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+#回到列表界面
+def introduce(request):
+    print '测试简介'
+    
+
+    ss = request.session['argStr']
+    node_str = ss.split('|')
+    node_list =[]
+    for i in node_str:
+        node_list.append(int(i))
+
+    tree = ElementTree()
+    file_name = 'srp/static/menu.xml'
+    root = tree.parse(file_name)
+    
+    xml_path = dfs_for_xml(root, node_list)    #读menu.xml来获得xml路径
+    
+    print '@@@@@@@@@@@@@'
+    print xml_path 
+
+    url_path = 'http://'+site_ip+'/'+xml_path
+    
+    print url_path
+
+    res_type = xml_path.split('/')[-1]
+    url_path=url_path.encode('utf-8')
+    url_path=urllib2.unquote(url_path)
+
+    res_head =  'http://'+site_ip+'/'+'/'.join(xml_path.split('/')[:-1])+'/'
+    print '--------'
+    
+    #打开url数据
+    data = urlopen(url_path)#.read().decode('ascii', 'ignore')  
+    
+    data_text = data.read().decode('gbk')
+
+    si = data_text.find(u"<body>")+6
+    ti = data_text.find(u"</body>")
+    print si,ti
+    print data_text[si:ti]
+
+    print '!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+
+    res_text=data_text[si:ti]
+
+    
+    
+
+    return render(request,'introduce.html',{'introduction':res_text})
 
 def viewer(request):
     print '处理viewerjs：'

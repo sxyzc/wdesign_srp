@@ -153,27 +153,27 @@
                     <li>
                         <a href="{% url 'srp:index' %}"><i class="lnr lnr-home"></i>首页</a>
                     </li>
-                    <li>
-                        <a href="#课程简介" data-toggle="collapse" class="collapsed"><i class="lnr lnr-book"></i><span>课程简介</span><i class="icon-submenu lnr lnr-chevron-left"></i></a>
-                        <div id="课程简介" class="collapse">
-                            <ul class="nav" style="padding-left: 15px;">
-                                <li><a href="introduction/i1.html"><i class="lnr lnr-tag"></i>课程简介</a></li>
-                                <li><a href="introduction/i2.html"><i class="lnr lnr-tag"></i>教学大纲</a></li>
-                                <li><a href="introduction/i3.html"><i class="lnr lnr-tag"></i>教学日历</a></li>
-                                <li><a href="introduction/i4.html"><i class="lnr lnr-tag"></i>课程特色</a></li>
-                                <li><a href="introduction/i5.html"><i class="lnr lnr-tag"></i>学习者分析</a></li>
-                                <li>
-                                    <a href="#教材参考" data-toggle="collapse" class="collapsed"><i class="lnr lnr-tag"></i>教材参考<i class="icon-submenu lnr lnr-chevron-left"></i></a>
-                                    <div id="教材参考" class="collapse">
-                                        <ul class="nav" style="padding-left: 15px;">
-                                            <li><a href="introduction/i6_1.html"><i class="lnr lnr-tag"></i>学术理论类</a></li>
-                                            <li><a href="introduction/i6_2.html"><i class="lnr lnr-tag"></i>案例应用类</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#课程简介" data-toggle="collapse" class="collapsed"><i class="lnr lnr-book"></i><span>课程简介</span><i class="icon-submenu lnr lnr-chevron-left"></i></a>-->
+                        <!--<div id="课程简介" class="collapse">-->
+                            <!--<ul class="nav" style="padding-left: 15px;">-->
+                                <!--<li><a href="introduction/i1.html"><i class="lnr lnr-tag"></i>课程简介</a></li>-->
+                                <!--<li><a href="introduction/i2.html"><i class="lnr lnr-tag"></i>教学大纲</a></li>-->
+                                <!--<li><a href="introduction/i3.html"><i class="lnr lnr-tag"></i>教学日历</a></li>-->
+                                <!--<li><a href="introduction/i4.html"><i class="lnr lnr-tag"></i>课程特色</a></li>-->
+                                <!--<li><a href="introduction/i5.html"><i class="lnr lnr-tag"></i>学习者分析</a></li>-->
+                                <!--<li>-->
+                                    <!--<a href="#教材参考" data-toggle="collapse" class="collapsed"><i class="lnr lnr-tag"></i>教材参考<i class="icon-submenu lnr lnr-chevron-left"></i></a>-->
+                                    <!--<div id="教材参考" class="collapse">-->
+                                        <!--<ul class="nav" style="padding-left: 15px;">-->
+                                            <!--<li><a href="introduction/i6_1.html"><i class="lnr lnr-tag"></i>学术理论类</a></li>-->
+                                            <!--<li><a href="introduction/i6_2.html"><i class="lnr lnr-tag"></i>案例应用类</a></li>-->
+                                        <!--</ul>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</li>-->
                     <script>
 
                         xmlDoc=loadXMLDoc("/static/menu.xml");
@@ -184,7 +184,7 @@
                         for(var i=0;i<x.length;i++){
                             if (x[i].nodeType==1){
                                 cnt+=1
-                                if(x[i].getAttribute("displayName")=="课程资源")
+                                if(x[i].getAttribute("displayName")=="课程资源"||x[i].getAttribute("displayName")=="课程简介")
                                     dfs(x[i],(cnt-1)+"")
                             }
                         }

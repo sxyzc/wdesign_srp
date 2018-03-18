@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../static/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../static/linearicons/style.css">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/linearicons/style.css">
 
-    <link rel="stylesheet" href="../../static/css/mystyle.css">
-    <script src="../../static/scripts/jquery.min.js"></script>
-    <script src="../../static/scripts/bootstrap.min.js"></script>
-    <script src="../../static/scripts/srp.js"></script>
+    <link rel="stylesheet" href="../static/css/mystyle.css">
+    <script src="../static/scripts/jquery.min.js"></script>
+    <script src="../static/scripts/bootstrap.min.js"></script>
+    <script src="../static/scripts/srp.js"></script>
     <!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>-->
     <script>
         function loadXMLDoc(dname)
@@ -132,27 +132,27 @@
                 <li>
                     <a href="{% url 'srp:index' %}"><i class="lnr lnr-home"></i>首页</a>
                 </li>
-                <li>
-                    <a href="#课程简介" data-toggle="collapse" class="collapsed"><i class="lnr lnr-book"></i><span>课程简介</span><i class="icon-submenu lnr lnr-chevron-left"></i></a>
-                    <div id="课程简介" class="collapse">
-                        <ul class="nav" style="padding-left: 15px;">
-                            <li><a href="i1.html"><i class="lnr lnr-tag"></i>课程简介</a></li>
-                            <li><a href="i2.html"><i class="lnr lnr-tag"></i>教学大纲</a></li>
-                            <li><a href="i3.html"><i class="lnr lnr-tag"></i>教学日历</a></li>
-                            <li><a href="i4.html"><i class="lnr lnr-tag"></i>课程特色</a></li>
-                            <li><a href="i5.html"><i class="lnr lnr-tag"></i>学习者分析</a></li>
-                            <li>
-                                <a href="#教材参考" data-toggle="collapse" class="collapsed"><i class="lnr lnr-tag"></i>教材参考<i class="icon-submenu lnr lnr-chevron-left"></i></a>
-                                <div id="教材参考" class="collapse">
-                                    <ul class="nav" style="padding-left: 15px;">
-                                        <li><a href="i6_1.html"><i class="lnr lnr-tag"></i>学术理论类</a></li>
-                                        <li><a href="i6_2.html"><i class="lnr lnr-tag"></i>案例应用类</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                <!--<li>-->
+                    <!--<a href="#课程简介" data-toggle="collapse" class="collapsed"><i class="lnr lnr-book"></i><span>课程简介</span><i class="icon-submenu lnr lnr-chevron-left"></i></a>-->
+                    <!--<div id="课程简介" class="collapse">-->
+                        <!--<ul class="nav" style="padding-left: 15px;">-->
+                            <!--<li><a href="i1.html"><i class="lnr lnr-tag"></i>课程简介</a></li>-->
+                            <!--<li><a href="i2.html"><i class="lnr lnr-tag"></i>教学大纲</a></li>-->
+                            <!--<li><a href="i3.html"><i class="lnr lnr-tag"></i>教学日历</a></li>-->
+                            <!--<li><a href="i4.html"><i class="lnr lnr-tag"></i>课程特色</a></li>-->
+                            <!--<li><a href="i5.html"><i class="lnr lnr-tag"></i>学习者分析</a></li>-->
+                            <!--<li>-->
+                                <!--<a href="#教材参考" data-toggle="collapse" class="collapsed"><i class="lnr lnr-tag"></i>教材参考<i class="icon-submenu lnr lnr-chevron-left"></i></a>-->
+                                <!--<div id="教材参考" class="collapse">-->
+                                    <!--<ul class="nav" style="padding-left: 15px;">-->
+                                        <!--<li><a href="i6_1.html"><i class="lnr lnr-tag"></i>学术理论类</a></li>-->
+                                        <!--<li><a href="i6_2.html"><i class="lnr lnr-tag"></i>案例应用类</a></li>-->
+                                    <!--</ul>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</li>-->
                 <script>
 
                     xmlDoc=loadXMLDoc("/static/menu.xml");
@@ -195,25 +195,30 @@
                     <div class="card-main">
                         <div class="card-inner">
                             <p class="card-heading"></p>
+                            <!--<p>课程名称：网络媒体设计</p>-->
 
-                            <p>课程名称：网络媒体设计</p>
-                            {{introduction}}
-                            <!-- 原网页的html的body代码如上，下面尝试用Js，但失败 -->
-                            <!-- <div id="trrr1"></div>
+                            <!-- 先把原网页的html的body代码放在页面上但不显示，用Js取出文本，再写入显示区域 -->
+                            <div id="hide-text" style="display: none">{{introduction}}</div>
+                            <div id="trrr1"></div>
                             <script>
+                                var str = document.getElementById("hide-text").textContent;
+//                                console.log(str);
                                 console.log('%%%%%%%%%%%%%%%');
-                                document.write('---------');
-                                document.getElementById("trrr1").innerHTML="{{introduction}}";
-                            
-                                document.write('---------');
+                                $("#trrr1").html(str);
                                 console.log('%%%%%%%%%%%%%%%');
-                            </script> -->
+                            </script>
+                            <!-- 原网页的html的body代码如上，下面尝试用Js，但失败 -->
+                            <!--<script>-->
+                                <!--console.log('%%%%%%%%%%%%%%%');-->
+                                <!--document.write('-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;');-->
+                                <!--document.getElementById("trrr1").innerHTML="{{introduction}}";-->
+                                <!--document.write('-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;');-->
+                                <!--console.log('%%%%%%%%%%%%%%%');-->
+                            <!--</script>-->
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
         </div>
     </div>
 </div>
@@ -225,7 +230,7 @@
     </div>
 </footer>
 <div id="mask" class="mask"></div>
-<script src="../../static/scripts/jquery.slimscroll.min.js"></script>
-<script src="../../static/scripts/klorofil-common.js"></script>
+<script src="../static/scripts/jquery.slimscroll.min.js"></script>
+<script src="../static/scripts/klorofil-common.js"></script>
 </body>
 </html>

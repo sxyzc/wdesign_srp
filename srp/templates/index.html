@@ -196,13 +196,13 @@
                         <div class="card-inner">
                             <p class="card-heading">推荐阅读</p>
                             <ul>
-                                <li><p><a href="https://cube.datastory.com.cn/share?dashboardId=1771&shareKey=9ef869e6-91da-4856-97de-15ec1231fc5b" target="_blank">JEEP牧马人之《爸爸去哪儿》形象大改造</a><span class="dateTimeSpan">2018/1/24</span></p></li>
-                                <li><p><a href="https://cube.datastory.com.cn/share?dashboardId=1747&shareKey=6e1de03a-924f-445a-91e1-e02caa245911" target="_blank">看舒肤佳如何借助《爸爸去哪儿5》绝地反击</a><span class="dateTimeSpan">2018/1/24</span></p></li>
-                                <li><p><a href="https://cube.datastory.com.cn/share?dashboardId=1844&shareKey=09c5e196-7771-4d07-91a3-1175386a4cb3" target="_blank">“萌娃”表示，这锅我们不背——理肤泉在《爸哪》的投放情况评价</a><span class="dateTimeSpan">2018/1/24</span></p></li>
-                                <li><p><a href="https://cube.datastory.com.cn/share?dashboardId=1831&shareKey=d9c64a82-40c0-4ddc-ad30-e9a3a94b2bcb" target="_blank">妙卡如何用《爸爸去哪儿5》进入中国消费者眼球</a><span class="dateTimeSpan">2018/1/24</span></p></li>
-                                <li><p><a href="https://cube.datastory.com.cn/share?dashboardId=1878&shareKey=7a9c6df9-654a-4d01-9c28-4b51837bddc3" target="_blank">“诺优能”的综艺公关大戏</a><span class="dateTimeSpan">2018/1/24</span></p></li>
-                                <li><p><a href="https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen" target="_blank">hans-rosling-the_best_stats_you_ve_ever_seen</a><span class="dateTimeSpan">2017/11/22</span></p></li>
-                                <li><p><a href="http://www.199it.com/archives/641664.html" target="_blank">Ooyala：2017年Q2全球视频指数报告</a><span class="dateTimeSpan">2017/10/18</span></p></li>
+                                {% for news in recList %}
+                                <!-- 资源信息为  对应数字编号取值，如news.0表示title_text
+        temp_list =[title_text,link_text,time_text]    -->
+                                
+                                <li><p><a href='{{news.1}}' target="_blank">{{news.0}}</a><span class="dateTimeSpan">{{news.2}}</span></p></li>
+                                {% endfor %}
+
                             </ul>
                         </div>
                         <!--<div class="card-action">-->
@@ -219,11 +219,13 @@
                         <div class="card-inner">
                             <p class="card-heading">通知公告</p>
                             <ul>
-                                <li><p><a href="http://222.16.42.167/wdesign/%E9%A6%96%E9%A1%B5/%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A/linkFiles/Tableau%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%9020171120105406onlineEdit/default.htm" target="_blank">Tableau学习资源</a><span class="dateTimeSpan">2017/11/20</span></p></li>
-                                <li><p><a href="http://222.16.42.167/wdesign/%E9%A6%96%E9%A1%B5/%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A/linkFiles/%E6%95%B0%E5%AD%97%E8%90%A5%E9%94%80%E5%B9%B3%E5%8F%B020171113162928onlineEdit/default.htm" target="_blank">数字营销平台</a><span class="dateTimeSpan">2017/11/13</span></p></li>
-                                <li><p><a href="http://222.16.42.167/wdesign/%E9%A6%96%E9%A1%B5/%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A/linkFiles/%E6%95%B0%E6%8D%AE%E8%B0%83%E6%9F%A5%E8%B5%84%E6%BA%90%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E5%8F%AF%E6%8A%95%E7%A8%BF%EF%BC%89201762170602onlineEdit/default.htm" target="_blank">数据调查资源（持续更新可投稿）</a><span class="dateTimeSpan">2017/6/2</span></p></li>
-                                <li><p><a href="http://222.16.42.167/wdesign/%E9%A6%96%E9%A1%B5/%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A/linkFiles/%E7%94%B5%E5%AD%90%E4%B9%A6%E8%B5%84%E6%BA%90%E5%B7%B2%E6%9B%B4%E6%96%B0%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E5%8F%AF%E6%8A%95%E7%A8%BF%EF%BC%892016831170115onlineEdit/default.htm" target="_blank">电子书资源已更新（持续更新可投稿）</a><span class="dateTimeSpan">2016/8/31</span></p></li>
-                                <li><p><a href="http://222.16.42.167/wdesign/%E9%A6%96%E9%A1%B5/%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A/linkFiles/%E7%94%B5%E5%AD%90%E4%B9%A6%E8%B5%84%E6%BA%90%E5%B7%B2%E6%9B%B4%E6%96%B0%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E5%8F%AF%E6%8A%95%E7%A8%BF%EF%BC%892016831170115onlineEdit/default.htm" target="_blank">=====我是学期分割线=====</a><span class="dateTimeSpan">2016/8/31</span></p></li>
+                                {% for news in newsList %}
+                                <!-- 资源信息为  对应数字编号取值，如news.0表示title_text
+        temp_list =[title_text,link_text,time_text]    -->
+                                
+                                <li><p><a href='http://222.16.42.167/wdesign/首页/通知公告/{{news.1}}' target="_blank">{{news.0}}</a><span class="dateTimeSpan">{{news.2}}</span></p></li>
+                                {% endfor %}
+                                
                             </ul>
                         </div>
                         <!--<div class="card-action">-->

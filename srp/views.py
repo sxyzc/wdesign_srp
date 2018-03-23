@@ -126,6 +126,23 @@ def dfs_for_data(root_node, level, result_list,res_type,res_head):
     #    return
     result_list.append(temp_list)  
 
+#遍历资源xml来获得数据，没有用到dfs(只是起初取了dfs)
+def dfs_for_news(root_node, result_list):
+    #title_text = root_node.find(xml_ns+'title').text
+    title_text = root_node.find('title').text
+    link_text = root_node.find('hyperLinkFile').text
+    time_text = root_node.find('createTime').text
+    
+
+    print '-----------   news'
+    temp_list =[title_text,link_text,time_text]  
+    print temp_list
+    #print temp_list
+    #if level != 1 and root_node.attrib.get('hyperLinkFile', '123') != 'view_resource.htm':
+    #    return
+    result_list.append(temp_list)  
+
+
 #处理提交，即改session,然后跳转回detail
 def process_get(request):
     request.session['argStr'] = request.GET.get('argStr')
@@ -156,10 +173,16 @@ def introduce(request):
     root = tree.parse(file_name)
     
     xml_path = dfs_for_xml(root, node_list)    #读menu.xml来获得xml路径
+    if xml_path.split('/')[-1] != u'':
+        return HttpResponseRedirect(reverse('srp:detail'))
     
     print '@@@@@@@@@@@@@'
     print xml_path 
 
+    print xml_path.split('/')
+    title_text=xml_path.split('/')[-2]
+
+    print title_text
     url_path = 'http://'+site_ip+'/'+xml_path
     
     print url_path
@@ -170,7 +193,7 @@ def introduce(request):
 
     res_head =  'http://'+site_ip+'/'+'/'.join(xml_path.split('/')[:-1])+'/'
     print '--------'
-    
+    print url_path.decode('utf-8')
     #打开url数据
     data = urlopen(url_path)#.read().decode('ascii', 'ignore')  
     
@@ -188,7 +211,7 @@ def introduce(request):
     
     
 
-    return render(request,'introduce.html',{'introduction':res_text})
+    return render(request,'introduce.html',{'introduction':res_text,'title_text':title_text})
 
 def viewer(request):
     print '处理viewerjs：'
@@ -334,10 +357,24 @@ def detail(request):
     #return render(request,'detail.html',{'L':L})
     return render(request,'detail.html',{'L':ress})
 
+def get_news_or_recommend(data_url):
+    data = urlopen(data_url)#.read().decode('ascii', 'ignore')  
+    
+    data_text = data.read()
+    rt = read_data(data_text)
+    res = []
+    res_node = rt.getchildren()
+    for i in res_node:
+        dfs_for_news(i,res)
+    return res
+
 #默认页面下，先写一个默认的session，避免detail中未设session报错
 def index(request):
-    request.session['argStr'] = '3|0|0|0'
-    return render(request,'index.html')
+    #request.session['argStr'] = '3|0|0|0'
+    #data = urlopen()#.read().decode('ascii', 'ignore')  
+    news_L = get_news_or_recommend('http://222.16.42.167/wdesign/%E9%A6%96%E9%A1%B5/%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A/linkTitle.xml')
+    recommend_L = get_news_or_recommend('http://222.16.42.167/wdesign/%E9%A6%96%E9%A1%B5/%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB/linkTitle.xml')
+    return render(request,'index.html',{'newsList':news_L[:5],'recList':recommend_L[:5]})
 
 def update_data(request):
     print '更新数据，先删除数据'
